@@ -8,3 +8,9 @@
     --color-secondary : #54433C;
     --color-brown : #823B18;
 }
+@layer base { 
+    
+}
+button {
+    cursor: pointer;
+}

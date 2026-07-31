@@ -11,13 +11,13 @@
     <link href="./assets/src/output.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="bg-primary py-5">
-        <div class="container mx-auto flex justify-between">
-            <nav class="lists">
-                <ul class="flex gap-7.5">
+<body class="font-primary">
+    <header class="bg-primary px-2 py-2 md:py-5">
+        <div class="container mx-auto flex justify-between items-center">
+            <nav class="lists hidden md:block">
+                <ul class="flex gap-5 capitalize text-secondary font-semibold">
                     <li>
-                        <a href="#">home</a>
+                        <a href="#" class="underline text-brown">home</a>
                     </li>
                     <li>
                         <a href="#">shop</a>
@@ -30,18 +30,43 @@
                     </li>
                 </ul>
             </nav>
-            <div class="logo flex gap-3">
-                <img src="./assets/image/public/icon-logo.svg" alt="icon">
-                <img src="./assets/image/public/text-logo.svg" alt="text">
+            <div class="menu block md:hidden text-brown">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="icon">
-                <i class="fa-brands fa-sistrix"></i>
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+            <div class="logo flex gap-5">
+                <img src="./assets/image/public/icon-logo.svg" alt="icon" class="max-w-full hidden md:block">
+                <img src="./assets/image/public/text-logo.svg" alt="text" class="max-w-full">
             </div>
-
+            <!--هل الافضل نعطي اللون للايقونة بشكل مباشر ولا بزبط للاب المباشر-->
+            <div class="icon hidden md:flex gap-5 font-semibold">
+                <i class="fa-brands fa-sistrix text-secondary cursor-pointer"></i>
+                <i class="fa-solid fa-user bg-brown text-white rounded-2xl cursor-pointer"></i>
+                <i class="fa-solid fa-cart-shopping text-secondary cursor-pointer"></i>
+            </div>
+            <div class="bag-shopping block md:hidden text-brown">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
         </div>
     </header>
+    <main>
+        <section class="hero bg-[url(../image/public/amjad.png)] md:bg-[url(../image/public/hero.png)] h-screen bg-cover">
+            <div class="container mx-auto flex flex-col justify-end md:justify-center h-full gap-3 md:gap-10">
+                <span class="hidden md:block text-[#FFDBCD] font-semibold leading-5">THE ART OF COOKING</span>
+                <h1 class="md:text-[40px] text-white font-semibold font-heading md:leading-12 px-2.5 md:px-0">Elevate Your Culinary Craft</h1>
+                <p class="text-white md:text-[18px] md:leading-7 line-clamp-1 md:line-clamp-none px-2.5 md:px-0">Professional-grade kitchenware designed for the home
+                    chef. Marrying heritage craftsmanship with modern
+                    minimalist design.</p>
+                <div class="btn flex gap-5 text-white px-2.5 md:px-0">
+                    <button class="bg-brown px-4 py-2 md:px-8 md:py-4 rounded-[10px] leading-5">Shop Now</button>
+                    <button class=" hidden md:block font-semibold leading-5">Explore Collections</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            
+        </section>
+    </main>
+
 </body>
 
 </html>
