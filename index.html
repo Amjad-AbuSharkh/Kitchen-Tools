@@ -111,10 +111,14 @@
 
         </section>
         <section class="Signature mt-5">
-            <h2 class="text-center font-heading font-medium text-[32px] leading-10 mb-4">The Signature Edit</h2>
-            <p class="text-center font-normal leading-6 text-secondary">Our most loved essentials, crafted to last a lifetime and perform under the <br>
+            <h2 class="hidden md:block text-center font-heading font-medium text-[32px] leading-10 mb-4">The Signature
+                Edit</h2>
+            <p class="hidden md:block text-center font-normal leading-6 text-secondary">Our most loved essentials,
+                crafted to last a
+                lifetime and perform under the <br>
                 most demanding kitchen conditions.</p>
             <div class="container mx-auto mt-5">
+                <!--في مشكلة في تقسيم العناصر عند الشاشة 3 ؟؟-->
                 <div class="products hidden md:grid grid-cols-3 xl:grid-cols-4 gap-2.5">
                     <div class="item-one relative">
                         <img src="./assets/image/Products/Signature Oven.webp" alt="Signature">
@@ -143,9 +147,40 @@
                         <p class="font-semibold text-[14px] leading-5 opacity-[0.5]">10" • 3-Ply Copper Core</p>
                         <span class="font-semibold text-[14px] leading-5 text-brown opacity-[0.8]">$155.00</span>
                         <button
-                            class="top-4 left-4 rounded-[999px] text-[12px] leading-4 font-medium bg-[#4B5425] px-6 py-2 absolute text-white">New Arrival</button>
+                            class="top-4 left-4 rounded-[999px] text-[12px] leading-4 font-medium bg-[#4B5425] px-6 py-2 absolute text-white">New
+                            Arrival</button>
                     </div>
-
+                </div>
+                <!--هون استخدمت ال max-w-sm and mx-auto بحيث يجو بالنص جمب بعض مش بعاد عن بعض وما فهمتها منيح ؟-->
+                <div class="products-phone grid grid-cols-2 gap-3 max-w-sm mx-auto px-4 md:hidden">
+                    <div class="item-one relative">
+                        <img src="./assets/image/Product-Phone/Signature Collection.webp" alt="Signature">
+                        <h3 class="font-semibold text-[14px] leading-5 text-secondary">Signature Collection</h3>
+                        <p class="font-semibold leading-6">Sienna Cast Iron <br>
+                            Oven</p>
+                        <span class="font-normal leading-6 text-brown">$185.00</span>
+                        <i class="fa-solid fa-heart absolute top-3 right-4 text-brown bg-primary rounded-full"></i>
+                    </div>
+                    <div class="item-two relative">
+                        <img src="./assets/image/Product-Phone/Forged Series.webp" alt="Forged">
+                        <h3 class="font-semibold text-[14px] leading-5 text-secondary">Forged Series</h3>
+                        <p class="font-semibold leading-6">Essentials Knife Trio</p>
+                        <span class="font-normal leading-6 text-brown">$120.00</span>
+                        <i class="fa-regular fa-heart absolute top-3 right-4 text-brown bg-primary rounded-full"></i>
+                    </div>
+                     <div class="item-three">
+                        <img src="./assets/image/Product-Phone/Home Sanctuary.webp" alt="home">
+                        <h3 class="font-semibold text-[14px] leading-5 text-secondary">Home Sanctuary</h3>
+                        <p class="font-semibold leading-6">Bamboo Pantry Set</p>
+                        <span class="font-normal leading-6 text-brown">$45.00</span>
+                    </div>
+                     <div class="item-four relative">
+                        <img src="./assets/image/Product-Phone/Pro Bakeas.webp" alt="Pro">
+                        <h3 class="font-semibold text-[14px] leading-5 text-secondary">Pro Bake</h3>
+                        <p class="font-semibold leading-6">Copper Sheet Set</p>
+                        <span class="font-normal leading-6 text-brown">$68.00</span>
+                        <button class="absolute top-4 left-2 px-2 py-1 text-[#E2EDB0] text-[12px] font-medium leading-4 bg-[#636C3BE5]">New</button>
+                    </div>
                 </div>
             </div>
         </section>
