@@ -12,7 +12,7 @@
 </head>
 
 <body class="font-primary">
-    <header class="bg-primary px-2 py-2 md:py-5">
+    <header class="bg-primary px-4 md:px-16 h-20 flex flex-col justify-center items-center">
         <div class="container mx-auto flex justify-between items-center">
             <nav class="lists hidden md:block">
                 <ul class="flex gap-5 capitalize text-secondary font-semibold">
@@ -50,8 +50,8 @@
     </header>
     <main>
         <section
-            class="hero bg-[url(../image/public/amjad.png)] md:bg-[url(../image/public/hero.png)] h-screen bg-cover">
-            <div class="container mx-auto flex flex-col justify-end md:justify-center h-full gap-3 md:gap-10">
+            class="hero bg-[url(../image/public/amjad.png)] md:bg-[url(../image/public/hero.png)] h-screen bg-cover px-16 py-20">
+            <div class="container mx-auto flex flex-col justify-end md:justify-center h-full gap-3 md:gap-[23.4px]">
                 <span class="hidden md:block text-[#FFDBCD] font-semibold leading-5">THE ART OF COOKING</span>
                 <h1 class="md:text-[40px] text-white font-semibold font-heading md:leading-12 px-2.5 md:px-0">Elevate
                     Your Culinary Craft</h1>
@@ -65,8 +65,8 @@
                 </div>
             </div>
         </section>
-        <section class="categor md:bg-primary border">
-            <div class="container mx-auto mt-5">
+        <section class="categor md:bg-primary border py-12">
+            <div class="container mx-auto">
                 <span class="hidden md:block text-brown leading-5 font-semibold">— CURATED COLLECTIONS</span>
                 <div class="title flex justify-between items-center mb-8 px-2.5 md:px-0">
                     <h2
@@ -110,16 +110,16 @@
             </div>
 
         </section>
-        <section class="Signature mt-5">
-            <h2 class="hidden md:block text-center font-heading font-medium text-[32px] leading-10 mb-4">The Signature
+        <section class="Signature py-12 flex flex-col gap-4">
+            <h2 class="hidden md:block text-center font-heading font-medium text-[32px] leading-10">The Signature
                 Edit</h2>
             <p class="hidden md:block text-center font-normal leading-6 text-secondary">Our most loved essentials,
                 crafted to last a
                 lifetime and perform under the <br>
                 most demanding kitchen conditions.</p>
-            <div class="container mx-auto mt-5">
-                <!--في مشكلة في تقسيم العناصر عند الشاشة 3 ؟؟-->
-                <div class="products hidden md:grid grid-cols-3 xl:grid-cols-4 gap-2.5">
+            <div class="container mx-auto">
+                <!--في مشكلة في تقسيم العناصر عند الشاشة 3 ؟؟ وكان في مساحه فاضية ف استحدمت  mx-auto-->
+                <div class="products hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2.5 mx-auto justify-items-center">
                     <div class="item-one relative">
                         <img src="./assets/image/Products/Signature Oven.webp" alt="Signature">
                         <h3 class="font-heading font-normal leading-6 opacity-[0.8]">Signature Oven</h3>
@@ -153,6 +153,7 @@
                 </div>
                 <!--هون استخدمت ال max-w-sm and mx-auto بحيث يجو بالنص جمب بعض مش بعاد عن بعض وما فهمتها منيح ؟-->
                 <div class="products-phone grid grid-cols-2 gap-3 max-w-sm mx-auto px-4 md:hidden">
+                    <!--h2 Best Seller كانت تخرب ع العناصر ما عرفت شوالسبب-->
                     <div class="item-one relative">
                         <img src="./assets/image/Product-Phone/Signature Collection.webp" alt="Signature">
                         <h3 class="font-semibold text-[14px] leading-5 text-secondary">Signature Collection</h3>
@@ -168,22 +169,62 @@
                         <span class="font-normal leading-6 text-brown">$120.00</span>
                         <i class="fa-regular fa-heart absolute top-3 right-4 text-brown bg-primary rounded-full"></i>
                     </div>
-                     <div class="item-three">
+                    <div class="item-three">
                         <img src="./assets/image/Product-Phone/Home Sanctuary.webp" alt="home">
                         <h3 class="font-semibold text-[14px] leading-5 text-secondary">Home Sanctuary</h3>
                         <p class="font-semibold leading-6">Bamboo Pantry Set</p>
                         <span class="font-normal leading-6 text-brown">$45.00</span>
                     </div>
-                     <div class="item-four relative">
+                    <div class="item-four relative">
                         <img src="./assets/image/Product-Phone/Pro Bakeas.webp" alt="Pro">
                         <h3 class="font-semibold text-[14px] leading-5 text-secondary">Pro Bake</h3>
                         <p class="font-semibold leading-6">Copper Sheet Set</p>
                         <span class="font-normal leading-6 text-brown">$68.00</span>
-                        <button class="absolute top-4 left-2 px-2 py-1 text-[#E2EDB0] text-[12px] font-medium leading-4 bg-[#636C3BE5]">New</button>
+                        <button
+                            class="absolute top-4 left-2 px-2 py-1 text-[#E2EDB0] text-[12px] font-medium leading-4 bg-[#636C3BE5]">New</button>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="Services hidden md:block">
+            <div class="container mx-auto flex gap-8 justify-between bg-primary px-16 py-8">
+                <div class="FREE_SHIPPING flex items-center gap-2.5">
+                    <img src="./assets/image/public/Free.webp" alt="FREE-SHIPPING" class="w-[29.33px] h-[21.33px]">
+                    <div class="details">
+                        <h4 class="font-semibold text-[14px] leading-5 text-[#221A17]">FREE SHIPPING</h4>
+                        <p class="font-medium text-[12px] leading-4 text-secondary">On orders over $150</p>
+                    </div>
+                </div>
+                <div class="LIFETIME_WARRANTY flex items-center gap-2.5">
+                    <img src="./assets/image/public/lifetime.webp" alt="lifetime">
+                    <div class="details">
+                        <h4 class="font-semibold text-[14px] leading-5 text-[#221A17]">LIFETIME WARRANTY</h4>
+                        <span class="font-medium text-[12px] leading-4 text-secondary">Built to endure generations</span>
+                    </div>
+                </div>
+                <div class="ECO-CONSCIOUS flex items-center gap-2.5">
+                    <img src="./assets/image/public/Eco.webp" alt="ECO-CONSCIOUS">
+                    <div class="details">
+                        <h4 class="font-semibold text-[14px] leading-5 text-[#221A17]">ECO-CONSCIOUS</h4>
+                        <span class="font-medium text-[12px] leading-4 text-secondary">Recycled materials & packaging</span>
+                    </div>
+                </div>
+                <div class="EXPERT_SUPPORT flex items-center gap-2.5">
+                    <img src="./assets/image/public/expert.webp" alt="EXPERT_SUPPORT">
+                    <div class="details">
+                        <h4 class="font-semibold text-[14px] leading-5 text-[#221A17]">EXPERT SUPPORT</h4>
+                        <span class="font-medium text-[12px] leading-4 text-secondary">Chef-led customer care</span>
+                    </div>
+                </div>
+                <div class="Services_Phone block md:hidden">
+                    <div class="Free">
+                        <img src="./assets/image/public/Free.webp" alt="Free">
+                        <span>Fast Shipping</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 </body>
