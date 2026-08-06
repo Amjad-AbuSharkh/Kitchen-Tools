@@ -119,7 +119,8 @@
                 most demanding kitchen conditions.</p>
             <div class="container mx-auto">
                 <!--في مشكلة في تقسيم العناصر عند الشاشة 3 ؟؟ وكان في مساحه فاضية ف استحدمت  mx-auto-->
-                <div class="products hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2.5 mx-auto justify-items-center">
+                <div
+                    class="products hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2.5 mx-auto justify-items-center">
                     <div class="item-one relative">
                         <img src="./assets/image/Products/Signature Oven.webp" alt="Signature">
                         <h3 class="font-heading font-normal leading-6 opacity-[0.8]">Signature Oven</h3>
@@ -186,40 +187,58 @@
                 </div>
             </div>
         </section>
-        <section class="Services hidden md:block">
-            <div class="container mx-auto flex gap-8 justify-between bg-primary px-16 py-8">
-                <div class="FREE_SHIPPING flex items-center gap-2.5">
-                    <img src="./assets/image/public/Free.webp" alt="FREE-SHIPPING" class="w-[29.33px] h-[21.33px]">
+        <section class="Services">
+            <div class="container mx-auto flex gap-8 justify-between items-center md:bg-primary px-16 py-8">
+                <!--بحاجة الى تزبيط عند الشاشات الاصغر-->
+                <div class="FREE_SHIPPING hidden md:flex items-center gap-2.5">
+                    <img src="./assets/image/public/Free.webp" alt="FREE-SHIPPING">
                     <div class="details">
                         <h4 class="font-semibold text-[14px] leading-5 text-[#221A17]">FREE SHIPPING</h4>
                         <p class="font-medium text-[12px] leading-4 text-secondary">On orders over $150</p>
                     </div>
                 </div>
-                <div class="LIFETIME_WARRANTY flex items-center gap-2.5">
+                <div class="LIFETIME_WARRANTY hidden md:flex items-center gap-2.5">
                     <img src="./assets/image/public/lifetime.webp" alt="lifetime">
                     <div class="details">
                         <h4 class="font-semibold text-[14px] leading-5 text-[#221A17]">LIFETIME WARRANTY</h4>
-                        <span class="font-medium text-[12px] leading-4 text-secondary">Built to endure generations</span>
+                        <span class="font-medium text-[12px] leading-4 text-secondary">Built to endure
+                            generations</span>
                     </div>
                 </div>
-                <div class="ECO-CONSCIOUS flex items-center gap-2.5">
+                <div class="ECO-CONSCIOUS hidden md:flex items-center gap-2.5">
                     <img src="./assets/image/public/Eco.webp" alt="ECO-CONSCIOUS">
                     <div class="details">
                         <h4 class="font-semibold text-[14px] leading-5 text-[#221A17]">ECO-CONSCIOUS</h4>
-                        <span class="font-medium text-[12px] leading-4 text-secondary">Recycled materials & packaging</span>
+                        <span class="font-medium text-[12px] leading-4 text-secondary">Recycled materials &
+                            packaging</span>
                     </div>
                 </div>
-                <div class="EXPERT_SUPPORT flex items-center gap-2.5">
+                <div class="EXPERT_SUPPORT hidden md:flex items-center gap-2.5">
                     <img src="./assets/image/public/expert.webp" alt="EXPERT_SUPPORT">
                     <div class="details">
                         <h4 class="font-semibold text-[14px] leading-5 text-[#221A17]">EXPERT SUPPORT</h4>
                         <span class="font-medium text-[12px] leading-4 text-secondary">Chef-led customer care</span>
                     </div>
                 </div>
-                <div class="Services_Phone block md:hidden">
-                    <div class="Free">
-                        <img src="./assets/image/public/Free.webp" alt="Free">
-                        <span>Fast Shipping</span>
+                <!--هون ما عرفت اغير الابعاد ع الشاشات الي اقل من ال md ف الشكل ما كان انسب اشي -->
+                <div class="Services_Phone w-full flex justify-around items-center  bg-[#FFF1EC] rounded-2xl gap-2 px-6 py-6 md:hidden">
+                    <div class="Free flex flex-col justify-center items-center gap-1">
+                        <div class="img  w-12 h-12  rounded-full bg-[#A0522D1A] relative">
+                            <img src="./assets/image/public/Fast Shipping.svg" alt="Free" class="absolute top-4 left-3.5">
+                        </div>
+                        <span class="font-semibold text-[12px] leading-4 text-[#221A17]">Fast Shipping</span>
+                    </div>
+                    <div class="Secure flex flex-col justify-center items-center gap-1">
+                        <div class="img  w-12 h-12  rounded-full bg-[#A0522D1A] relative">
+                            <img src="./assets/image/public/Secure Payment.svg" alt="Secure" class="absolute top-3.5 left-4">
+                        </div>
+                        <span class="font-semibold text-[12px] leading-4 text-[#221A17]">Secure Payment</span>
+                    </div>
+                    <div class="Easy flex flex-col justify-center items-center gap-1">
+                        <div class="img  w-12 h-12  rounded-full bg-[#A0522D1A] relative">
+                            <img src="./assets/image/public/Easy Returns.svg" alt="Easy" class="absolute top-3.5 left-3.5">
+                        </div>
+                        <span class="font-semibold text-[12px] leading-4 text-[#221A17]">Easy Returns</span>
                     </div>
                 </div>
             </div>
