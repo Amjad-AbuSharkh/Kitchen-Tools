@@ -187,7 +187,7 @@
                 </div>
             </div>
         </section>
-        <section class="Services">
+        <section class="Services bg-primary">
             <div class="container mx-auto flex gap-8 justify-between items-center md:bg-primary px-16 py-8">
                 <!--بحاجة الى تزبيط عند الشاشات الاصغر-->
                 <div class="FREE_SHIPPING hidden md:flex items-center gap-2.5">
@@ -221,28 +221,79 @@
                     </div>
                 </div>
                 <!--هون ما عرفت اغير الابعاد ع الشاشات الي اقل من ال md ف الشكل ما كان انسب اشي -->
-                <div class="Services_Phone w-full flex justify-around items-center  bg-[#FFF1EC] rounded-2xl gap-2 px-6 py-6 md:hidden">
+                <div
+                    class="Services_Phone w-full flex justify-around items-center  bg-[#FFF1EC] rounded-2xl gap-2 px-6 py-6 md:hidden">
                     <div class="Free flex flex-col justify-center items-center gap-1">
                         <div class="img  w-12 h-12  rounded-full bg-[#A0522D1A] relative">
-                            <img src="./assets/image/public/Fast Shipping.svg" alt="Free" class="absolute top-4 left-3.5">
+                            <img src="./assets/image/public/Fast Shipping.svg" alt="Free"
+                                class="absolute top-4 left-3.5">
                         </div>
                         <span class="font-semibold text-[12px] leading-4 text-[#221A17]">Fast Shipping</span>
                     </div>
                     <div class="Secure flex flex-col justify-center items-center gap-1">
                         <div class="img  w-12 h-12  rounded-full bg-[#A0522D1A] relative">
-                            <img src="./assets/image/public/Secure Payment.svg" alt="Secure" class="absolute top-3.5 left-4">
+                            <img src="./assets/image/public/Secure Payment.svg" alt="Secure"
+                                class="absolute top-3.5 left-4">
                         </div>
                         <span class="font-semibold text-[12px] leading-4 text-[#221A17]">Secure Payment</span>
                     </div>
                     <div class="Easy flex flex-col justify-center items-center gap-1">
                         <div class="img  w-12 h-12  rounded-full bg-[#A0522D1A] relative">
-                            <img src="./assets/image/public/Easy Returns.svg" alt="Easy" class="absolute top-3.5 left-3.5">
+                            <img src="./assets/image/public/Easy Returns.svg" alt="Easy"
+                                class="absolute top-3.5 left-3.5">
                         </div>
                         <span class="font-semibold text-[12px] leading-4 text-[#221A17]">Easy Returns</span>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="cooking px-12 py-12 bg-primary">
+            <div class="container mx-auto hidden md:grid md:grid-cols-2">
+                <div class="rigth-side flex flex-col gap-6">
+                    <img src="./assets/image/public/Background.svg" alt="Background" class="w-fit">
+                    <h2 class="font-heading font-medium text-[32px] leading-10">"Cooking is a performance.
+                        Your tools are your
+                        instruments."</h2>
+                    <p class="font-normal text-[18px] leading-7 text-secondary">Founded by chefs and refined by designers, Sienna
+                        Kitchen is committed to creating kitchenware that
+                        doesn't just work well, but inspires you to create
+                        more. Every curve, handle, and material is chosen
+                        for its longevity and tactile pleasure.</p>
+                    <div class="img flex gap-4">
+                        <img src="./assets/image/public/cook.webp" alt="cook" class="rounded-full">
+                        <div class="details">
+                            <h4 class="font-semibold text-[14px] leading-5">Elena Vozzi</h4>
+                            <p class="font-medium text-[12px] leading-4 text-secondary">Founder & Executive Chef</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-side relative">
+                    <img src="./assets/image/public/cooking.webp" alt="cooking" class="max-w-full">
+                </div>
+            </div>
+        </section>
+        <!--ليش الراونديد ظهر تحت مش فوق ؟-->
+        <footer class="footer block py-5 px-8 rounded-t-xl border-t border-primary md:hidden">
+            <div class="container mx-auto grid grid-cols-4 gap-12 justify-center items-center">
+                <div class="home cursor-pointer flex flex-col items-center justify-center  py-1 px-4 rounded-xl bg-[#A0522D1A] w-fit ">
+                    <img src="./assets/image/public/home.svg" alt="home">
+                    <p class="text-[12px] leading-4 font-medium">Home</p>
+                </div>
+                <div class="shop cursor-pointer flex flex-col items-center justify-center">
+                    <img src="./assets/image/public/shop.svg" alt="shop">
+                    <p class="text-[12px] leading-4 font-medium">Shop</p>
+                </div>
+                <div class="cart cursor-pointer flex flex-col items-center justify-center">
+                    <img src="./assets/image/public/cart.svg" alt="cart">
+                    <p class="text-[12px] leading-4 font-medium">Cart</p>
+                </div>
+                <div class="account cursor-pointer flex flex-col items-center justify-center">
+                    <img src="./assets/image/public/account.svg" alt="account">
+                    <p class="text-[12px] leading-4 font-medium">Account</p>
+                </div>
+            </div>
+        </footer>
+
 
     </main>
 
