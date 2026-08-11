@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./assets/src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-primary">
+    <header class="bg-primary px-4 md:px-16 h-20 flex flex-col justify-center items-center">
+        <div class="container mx-auto flex justify-between items-center">
+            <nav class="lists hidden md:block">
+                <ul class="flex gap-5 capitalize text-secondary font-semibold">
+                    <li>
+                        <a href="./index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="underline text-brown">shop</a>
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu block md:hidden text-brown">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo flex gap-5">
+                <img src="./assets/image/public/icon-logo.svg" alt="icon" class="max-w-full hidden md:block">
+                <img src="./assets/image/public/text-logo.svg" alt="text" class="max-w-full">
+            </div>
+            <!--هل الافضل نعطي اللون للايقونة بشكل مباشر ولا بزبط للاب المباشر-->
+            <div class="icon hidden md:flex gap-5 font-semibold">
+                <i class="fa-brands fa-sistrix text-secondary cursor-pointer"></i>
+                <i class="fa-solid fa-user bg-brown text-white rounded-2xl cursor-pointer"></i>
+                <i class="fa-solid fa-cart-shopping text-secondary cursor-pointer"></i>
+            </div>
+            <div class="bag-shopping block md:hidden text-brown">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero py-5 bg-[#FFF1EC]">
+            <div class="container mx-auto hidden md:grid grid-cols-2 items-center">
+                <div class="left-side flex flex-col gap-2.5">
+                    <div class="title flex gap-2 items-center">
+                        <img src="./assets/image/public/home.svg" alt="home">
+                        <img src="./assets/image/public/arrow.svg" alt="arrow">
+                        <span class="font-medium text-[12px] leading-4 text-brown">SHOP ALL</span>
+                    </div>
+                    <h1 class=" font-heading font-semibold text-[48px] leading-14">The Kitchen Collection</h1>
+                </div>
+                <div class="right-side flex justify-end items-center gap-2.5">
+                    <span class="font-semibold text-[14px] leading-5 text-secondary">SORT BY :</span>
+                    <button class="px-6 py-2 bg-white rounded-[999px] font-semibold text-[14px] leading-5">Newest
+                        Arrivals</button>
+                    <img src="./assets/image/public/down.svg" alt="down" class="inline">
+                </div>
+            </div>
+            <div class="details-phone block md:hidden px-4">
+                <h1 class="font-heading font-medium text-[24px] leading-8 ">Kitchen Essentials</h1>
+                <p class="font-normal text-[16px] leading-6 text-secondary">Curated tools for the modern culinary home.
+                </p>
+            </div>
+        </section>
+        <section class="categories py-8 bg-primary">
+            <div class="container mx-auto grid grid-cols-2">
+                <div class="left-side px-4 md:px-0">
+                    <form action="" class=" hidden md:flex flex-col gap-6">
+                        <legend class="font-semibold text-[14px] leading-5">CATEGORIES</legend>
+                        <label for="" class="flex justify-between items-center w-[256px] gap-6">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox">
+                                <span class="font-semibold text-[14px] leading-5 text-secondary">Cookware</span>
+                            </div>
+                            <span class="font-medium text-[12px] leading-4 text-[#87736B]">24</span>
+                        </label>
+                        <label for="" class="flex justify-between items-center w-[256px] gap-6">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox">
+                                <span class="font-semibold text-[14px] leading-5 text-secondary">Knives</span>
+                            </div>
+                            <span class="font-medium text-[12px] leading-4 text-[#87736B]">12</span>
+                        </label>
+                        <label for="" class="flex justify-between items-center w-[256px] gap-6">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox">
+                                <span class="font-semibold text-[14px] leading-5 text-secondary">Organizers</span>
+                            </div>
+                            <span class="font-medium text-[12px] leading-4 text-[#87736B]">38</span>
+                        </label>
+                        <legend class="font-semibold text-[14px] leading-5">MATERIAL</legend>
+                        <label for="" class="flex justify-between items-center w-[256px] gap-6">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox">
+                                <span class="font-semibold text-[14px] leading-5 text-secondary">Stainless Steel</span>
+                            </div>
+                        </label>
+                        <label for="" class="flex justify-between items-center w-[256px] gap-6">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox">
+                                <span class="font-semibold text-[14px] leading-5 text-secondary">Cast Iron</span>
+                            </div>
+                        </label>
+                        <label for="" class="flex justify-between items-center w-[256px] gap-6">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox">
+                                <span class="font-semibold text-[14px] leading-5 text-secondary">Silicone</span>
+                            </div>
+                        </label>
+                        <label for="" class="flex justify-between items-center w-[256px] gap-6">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox">
+                                <span class="font-semibold text-[14px] leading-5 text-secondary">Acacia Wood</span>
+                            </div>
+                        </label>
+                        <legend class="font-semibold text-[14px] leading-5">PRICE RANGE</legend>
+                        <label for="" class="w-fit flex flex-col">
+                            <!--كيف ممكن اغير لون الشريط ؟-->
+                            <input type="range" min="0" max="2500" value="100" step="200">
+                            <div class="range flex justify-between items-center">
+                                <span class="font-semibold text-[14px] leading-5">$5</span>
+                                <span class="font-semibold text-[14px] leading-5">$500</span>
+                            </div>
+                        </label>
+                        <div class="quick p-4 bg-[#636C3B1A] rounded-2xl flex justify-between w-[256px]">
+                            <div class="details flex flex-col">
+                                <span class="font-semibold text-[14px] leading-5 text-[#4B5425]">Quick Delivery</span>
+                                <span class="font-medium text-[12px] leading-4 text-secondary">Ships in 24h</span>
+                            </div>
+                            <img src="./assets/image/public/Overlay.svg" alt="Overlay" class="cursor-pointer">
+                        </div>
+                    </form>
+                </div>
+                <div class="right-side hidden md:grid grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="item-one relative">
+                        <img src="./assets/image/Products/The Obsidian Chef's Knife.webp" alt="Obsidian">
+                        <button
+                            class="absolute top-2.5 left-2.5 py-1 px-4 rounded-full text-white font-medium text-[12px] ledaing-4  bg-[#4B5425]">TOP
+                            RATED</button>
+                        <div class="details flex">
+                            <h4 class="font-heading font-normal text-[16px] leading-6">The Obsidian Chef's Knife</h4>
+                            <span class="font-semibold text-[14px] leading-5 text-secondary">$185</span>
+                        </div>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">Forged 8" High-Carbon Stainless
+                            Steel</p>
+                    </div>
+                    <div class="item-two">
+                        <img src="./assets/image/Products/Heirloom Tri-Ply Set.webp" alt="Heirloom">
+                        <div class="details flex">
+                            <h4 class="font-heading font-normal text-[16px] leading-6">Heirloom Tri-Ply Set</h4>
+                            <span class="font-semibold text-[14px] leading-5 text-secondary">$420</span>
+                        </div>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">Stainless Steel & Copper Core, 3-
+                            Piece</p>
+                    </div>
+                    <div class="item-three relative">
+                        <img src="./assets/image/Products/Essential Tools Kit.webp" alt="Essential">
+                        <button
+                            class="absolute top-2.5 left-2.5 py-1 px-4 rounded-full text-brown font-medium text-[12px] ledaing-4  bg-primary">ECO-FRIENDLY</button>
+                        <div class="details flex">
+                            <h4 class="font-heading font-normal text-[16px] leading-6">Essential Tools Kit</h4>
+                            <span class="font-semibold text-[14px] leading-5 text-secondary">$65</span>
+                        </div>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">Heat-Resistant BPA-Free Silicone
+                        </p>
+                    </div>
+                    <div class="item-four">
+                        <img src="./assets/image/Products/Walnut Custom Tray.webp" alt="Walnut">
+                        <div class="details flex">
+                            <h4 class="font-heading font-normal text-[16px] leading-6">Walnut Custom Tray</h4>
+                            <span class="font-semibold text-[14px] leading-5 text-secondary">110</span>
+                        </div>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">Modular Solid Walnut Organizer</p>
+                    </div>
+                    <div class="item-five relative">
+                        <img src="./assets/image/Products/Signature Dutch Oven.webp" alt="Signature">
+                        <button
+                            class="absolute top-2.5 left-2.5 py-1 px-4 rounded-full text-white font-medium text-[12px] ledaing-4  bg-[#93000A]">LIMITED
+                            EDITION</button>
+                        <div class="details flex">
+                            <h4 class="font-heading font-normal text-[16px] leading-6">Signature Dutch Oven</h4>
+                            <span class="font-semibold text-[14px] leading-5 text-secondary">$295</span>
+                        </div>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">6.5 Quart Enameled Cast Iron</p>
+                    </div>
+                    <div class="item-six">
+                        <img src="./assets/image/Products/Ivory Steak Set.webp" alt="Ivory">
+                        <div class="details flex">
+                            <h4 class="font-heading font-normal text-[16px] leading-6">Ivory Steak Set</h4>
+                            <span class="font-semibold text-[14px] leading-5 text-secondary">$215</span>
+                        </div>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">Set of 4, German Steel</p>
+                    </div>
+                </div>
+                <div class="Filter-Phone flex items-center justify-around col-span-2 md:hidden">
+                    <span
+                        class="flex items-center gap-1 font-semibold text-[14px] cursor-pointer leading-5 text-secondary bg-[#F5E5DF] rounded-[999px] px-4 py-2">
+                        <img src="./assets/image/public/Filter.svg" alt="Filter">
+                        Filter</span>
+                    <span class="font-semibold text-[14px] leading-5 text-brown cursor-pointer">Popularity</span>
+                    <img src="./assets/image/public/Vector.svg" alt="Vector" class="cursor-pointer">
+                </div>
+                <div class="pages hidden md:flex col-start-2 justify-center items-center py-12 gap-10">
+                    <img src="./assets/image/public/arrow-left.svg" alt="arrow-left" class="cursor-pointer">
+                    <div class="numbers flex gap-8">
+                        <!--ما عرف اعمل الدائرة خلف الرقم ؟-->
+                        <span
+                            class="font-semibold text-[14px] ledaing-5  cursor-pointer bg-brown w-5 text-center text-white rounded-full">1</span>
+                        <span class="font-semibold text-[14px] ledaing-5  cursor-pointer">2</span>
+                        <span class="font-semibold text-[14px] ledaing-5  cursor-pointer">3</span>
+                        <span class="font-semibold text-[14px] ledaing-5  cursor-pointer">...</span>
+                        <span class="font-semibold text-[14px] ledaing-5 cursor-pointer">12</span>
+                    </div>
+                    <img src="./assets/image/public/arrow-rightt.svg" alt="arrow-right" class="cursor-pointer">
+                </div>
+            </div>
+        </section>
+        <section class="Complimentary Concierge Care hidden md:block bg-brown text-white px-8 py-8 mb-8">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="left-side">
+                    <h2 class="font-heading font-medium text-[32px] leading-10">Complimentary Concierge Care</h2>
+                    <p class="font-normal text-[16px leading-6]">Professional knife sharpening and cookware restoration
+                        <br> included for life.
+                    </p>
+                </div>
+                <button class="rounded-full bg-white text-brown font-semibold text-[14px] ledaing-5 px-8 py-2">LEARN
+                    MORE</button>
+            </div>
+        </section>
+        <section class="products-phone block md:hidden">
+            <div class="container mx-auto grid grid-cols-1 gap-8 justify-items-center">
+                <div class="Signature bg-[#FFF1EC]">
+                    <img src="./assets/image/public/Signature.webp" alt="">
+                    <div class="details py-6 px-3 md:px-0 flex flex-col gap-2">
+                        <h2 class="font-heading font-medium text-[24px] leading-8 flex justify-between">Signature Cast
+                            Iron <br>
+                            Dutch Oven <span class="text-[16px] leading-6 text-brown">$185.00</span></h2>
+                        <p class="font-normal leading-6 text-secondary">Engineered for perfection. This 5.5- <br>
+                            quart Dutch oven features a unique <br>
+                            enamel coating that resists staining <br>
+                            and dulling, making it as beautiful as it <br>
+                            is functional.</p>
+                        <div class="footer flex w-full gap-8">
+                            <span class="font-medium text-[12px] leading-4 text-secondary flex gap-2">
+                                <img src="./assets/image/public/medal.svg" alt="medal">
+                                Lifetime Warranty</span>
+                            <span class="font-medium text-[12px] leading-4 text-secondary flex gap-2">
+                                <img src="./assets/image/public/eco-2.svg" alt="Eco" class="w-3.5">
+                                Eco-Friendly</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Professional bg-[#FFF1EC]">
+                    <img src="./assets/image/public/Professional.webp" alt="Professional">
+                    <div class="details py-6 px-3 md:px-0 flex flex-col gap-2">
+                        <h2 class="font-heading font-medium text-[24px] leading-8 flex justify-between">Professional
+                            Mixing <br> Bowl Set
+                            <span class="text-[16px] leading-6 text-brown">$64.00</span>
+                        </h2>
+                        <p class="font-normal leading-6 text-secondary">A set of three nesting bowls crafted <br>
+                            from heavy-gauge stainless steel with <br>
+                            non-slip silicone bases. Perfect for <br>
+                            whipping, mixing, and serving.</p>
+                        <div class="footer flex w-full gap-8">
+                            <span class="font-medium text-[12px] leading-4 text-secondary flex gap-2">
+                                <img src="./assets/image/public/medal.svg" alt="medal">
+                                Chef Approved</span>
+                            <span class="font-medium text-[12px] leading-4 text-secondary flex gap-2">
+                                <img src="./assets/image/public/eco-2.svg" alt="Eco" class="w-3.5">
+                                Stackable Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Artisan bg-[#FFF1EC]">
+                    <img src="./assets/image/public/Artisan.webp" alt="Artisan">
+                    <div class="details py-6 px-3 md:px-0 flex flex-col gap-2">
+                        <h2 class="font-heading font-medium text-[24px] leading-8 flex justify-between">Artisan Ceramic
+                            Coffee <br>
+                            Set<span class="text-[16px] leading-6 text-brown">$92.00</span></h2>
+                        <p class="font-normal leading-6 text-secondary">Hand-glazed ceramic set designed for <br>
+                            the ultimate slow-brew experience. <br>
+                            Heat-retentive walls ensure your coffee <br>
+                            stays at the optimal temperature.</p>
+                        <div class="footer flex w-full gap-8">
+                            <span class="font-medium text-[12px] leading-4 text-secondary flex gap-2">
+                                <img src="./assets/image/public/medal.svg" alt="medal">
+                                Handcrafted</span>
+                            <span class="font-medium text-[12px] leading-4 text-secondary flex gap-2">
+                                <img src="./assets/image/public/eco-2.svg" alt="Eco" class="w-3.5">
+                                Premium Brew</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer py-12 px-8 bg-primary">
+            <div class="container mx-auto">
+                <div
+                    class="items px-16 hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-12">
+                    <div class="SIENNA_KITCHEN flex flex-col gap-4">
+                        <h4 class="font-heading font-normal leading-4 text-brown">SIENNA KITCHEN</h4>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">Crafting heritage in every meal.
+                            Premium kitchenware for the
+                            modern home.</p>
+                        <div class="icons flex gap-4">
+                            <img src="./assets/image/public/ball.svg" alt="ball">
+                            <img src="./assets/image/public/rose.svg" alt="rose">
+                            <img src="./assets/image/public/knife.svg" alt="knife">
+                        </div>
+                    </div>
+                    <div class="SITE_LINKS flex flex-col gap-4">
+                        <h4 class="font-semibold text-[14px] leading-5">SITE LINKS</h4>
+                        <ul class="flex flex-col gap-3 font-semibold text-[14px] leading-4 text-secondary">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Stockists</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="SUPPORT flex flex-col gap-4">
+                        <h4 class="font-semibold text-[14px] leading-5">SUPPORT</h4>
+                        <ul class="flex flex-col gap-3 font-semibold text-[14px] leading-4 text-secondary">
+                            <li><a href="#">Shipping & Returns</a></li>
+                            <li><a href="#">Care Guide</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Warranty</a></li>
+                        </ul>
+                    </div>
+                    <div class="NEWSLETTER flex flex-col gap-6">
+                        <h4 class="font-semibold text-[14px] leading-4">NEWSLETTER</h4>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">Join our circle for seasonal
+                            recipes
+                            and exclusive launches.</p>
+                        <div class="mail">
+                            <input type="email" placeholder="Email Address"
+                                class="font-semibold text-[14px] text-[#87736B]">
+                            <button class="font-semibold text-[14px] leading-5 text-brown">JOIN</button>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_phone flex justify-between md:hidden">
+                    <div
+                        class="home cursor-pointer flex flex-col items-center justify-center">
+                        <img src="./assets/image/public/home.svg" alt="home">
+                        <p class="text-[12px] leading-4 font-medium">Home</p>
+                    </div>
+                    <div class="shop cursor-pointer flex flex-col items-center justify-center  py-1 px-4 rounded-xl bg-[#A0522D1A] w-fit">
+                        <img src="./assets/image/public/shop.svg" alt="shop" class="sepia saturate-150 contrast-125">
+                        <p class="text-[12px] leading-4 font-medium text-brown">Shop</p>
+                    </div>
+                    <div class="cart cursor-pointer flex flex-col items-center justify-center">
+                        <img src="./assets/image/public/cart.svg" alt="cart">
+                        <p class="text-[12px] leading-4 font-medium">Cart</p>
+                    </div>
+                    <div class="account cursor-pointer flex flex-col items-center justify-center">
+                        <img src="./assets/image/public/account.svg" alt="account">
+                        <p class="text-[12px] leading-4 font-medium">Account</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+</body>
+
+</html>
