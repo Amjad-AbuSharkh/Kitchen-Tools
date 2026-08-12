@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details-Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/src/output.css">
+</head>
+
+<body class="bg-primary">
+    <header class=" px-4 md:px-16 h-20 flex flex-col justify-center items-center">
+        <div class="container mx-auto flex justify-between items-center">
+            <nav class="lists hidden md:block">
+                <ul class="flex gap-5 capitalize text-secondary font-semibold">
+                    <li>
+                        <a href="./index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="./shop.html" class="underline text-brown">shop</a>
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu block md:hidden text-brown">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo flex gap-5">
+                <img src="./assets/image/public/icon-logo.svg" alt="icon" class="max-w-full hidden md:block">
+                <img src="./assets/image/public/text-logo.svg" alt="text" class="max-w-full">
+            </div>
+            <!--هل الافضل نعطي اللون للايقونة بشكل مباشر ولا بزبط للاب المباشر-->
+            <div class="icon hidden md:flex gap-5 font-semibold">
+                <i class="fa-brands fa-sistrix text-secondary cursor-pointer"></i>
+                <i class="fa-solid fa-user bg-brown text-white rounded-2xl cursor-pointer"></i>
+                <i class="fa-solid fa-cart-shopping text-secondary cursor-pointer"></i>
+            </div>
+            <div class="bag-shopping block md:hidden text-brown">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <!--غلبني كثير تقريبا ساعتين شغل ؟-->
+    <section class="hero py-12 px-16">
+        <div class="container mx-auto grid grid-cols-2 gap-6">
+            <div class="left-side flex gap-6">
+                <div class="sec-img flex flex-col gap-4">
+                    <img src="./assets/image/Products/fryingpan-1.webp" alt="fryingpan-1" class="rounded-sm">
+                    <img src="./assets/image/Products/fryingpan-2.webp" alt="fryingpan-2" class="rounded-sm">
+                    <img src="./assets/image/Products/frying-3.webp" alt="frying-3" class="rounded-sm">
+                    <img src="./assets/image/Products/fryingpan-4.webp" alt="fryingpan-4" class="rounded-sm">
+                </div>
+                <div class="base-img">
+                    <img src="./assets/image/Products/frying_pan.webp" alt="frying_pan" class="max-w-full rounded-xl">
+                </div>
+            </div>
+            <div class="right-side flex flex-col gap-2">
+                <div class="cookware flex gap-1">
+                    <span class="font-medium text-[12px] leading-4 text-secondary">COOKWARE</span>
+                    <span class="font-medium text-[12px] leading-4 text-secondary">/</span>
+                    <span class="font-medium text-[12px] leading-4 text-secondary">CAST IRON</span>
+                    <span class="font-medium text-[12px] leading-4 text-secondary">/</span>
+                    <span class="font-medium text-[12px] leading-4 text-secondary">HERITAGE SKILLET</span>
+                </div>
+                <div class="title pt-4">
+                    <h1 class="font-heading font-semibold text-[48px] leading-14">Heritage Cast Iron <br>
+                        Skillet</h1>
+                </div>
+                <div class="stars flex items-center gap-4">
+                    <img src="./assets/image/public/stars.svg" alt="stars">
+                    <img src="./assets/image/public/stars.svg" alt="stars">
+                    <img src="./assets/image/public/stars.svg" alt="stars">
+                    <img src="./assets/image/public/stars.svg" alt="stars">
+                    <img src="./assets/image/public/star.svg" alt="star">
+                    <span class="font-semibold text-[14px] leading-5 text-secondary">124 Verifed Reviews</span>
+                </div>
+                <div class="price pt-6 flex flex-col gap-4">
+                    <span class="font-heading font-medium text-[32px] leading-10 text-brown">$128.00</span>
+                    <p class="font-normal leading-6 text-secondary">Pre-seasoned with organic flaxseed oil. A
+                        generational <br>
+                        piece designed for superior heat retention and a naturally <br>
+                        non-stick surface that improves with every use.</p>
+
+                </div>
+                <div class="QUANTITY py-10 flex flex-col gap-2">
+                    <h4 class="font-semibold text-[14px] leading-5">QUANTITY</h4>
+                    <button class="px-2 py-1 bg-[#FBEAE5] rounded-[9999px] w-32 flex justify-around">
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </button>
+                </div>
+                <div class="btn flex flex-col gap-4">
+                    <button class="bg-brown text-white rounded-xl py-4 flex items-center justify-center gap-4">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="font-semibold text-[14px] leading-5">ADD TO CART</span>
+                    </button>
+                    <button class="font-semibold text-[14px] leading-5 rounded-xl bg-white py-4">BUY IT NOW</button>
+                </div>
+                <div class="lifetime pt-8 flex items-center justify-around gap-6">
+                    <div class="eco flex items-center gap-4">
+                        <img src="./assets/image/public/Eco.webp" alt="Eco">
+                        <div class="flex flex-col">
+                            <span class="font-semibold text-[14px] leading-5">Eco-Friendly</span>
+                            <span class="font-medium text-[12px] leading-4 text-secondary">100% Recycled Iron</span>
+                        </div>
+                    </div>
+                    <div class="warranty flex items-center gap-4">
+                        <img src="./assets/image/public/lifetime.webp" alt="lifetime">
+                        <div class="flex flex-col">
+                            <span class="font-semibold text-[14px] leading-5">Lifetime Warranty</span>
+                            <span class="font-medium text-[12px] leading-4 text-secondary">Built for generations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Technical py-12 bg-white">
+        <div class="container mx-auto grid grid-cols-2 gap-6">
+            <div class="left-side flex flex-col gap-6">
+                <h2 class="font-heading font-medium text-[32px] leading-10">Technical Specifications</h2>
+                <p class="font-normal leading-6 text-secondary">Every Sienna Kitchen piece is engineered for
+                    performance. <br>
+                    From the thickness of the base to the curvature of the <br>
+                    handle, no detail is overlooked.</p>
+                <div class="form pt-2">
+                    <div class="one flex justify-between py-4">
+                        <h4 class="font-semibold text-[14px] leading-5 text-secondary">Diameter</h4>
+                        <span class="font-semibold text-[14px] leading-5 text-secondary">12 Inches (30.5 cm)</span>
+                    </div>
+                    <hr>
+                    <div class="two flex justify-between py-4">
+                        <h4 class="font-semibold text-[14px] leading-5 text-secondary">Weight</h4>
+                        <span class="font-semibold text-[14px] leading-5 text-secondary">7.2 lbs (3.2 kg)</span>
+                    </div>
+                    <hr>
+                    <div class="three flex justify-between py-4">
+                        <h4 class="font-semibold text-[14px] leading-5 text-secondary">Material</h4>
+                        <span class="font-semibold text-[14px] leading-5 text-secondary">High-grade Recycled Cast
+                            Iron</span>
+                    </div>
+                    <hr>
+                    <div class="four flex justify-between py-4">
+                        <h4 class="font-semibold text-[14px] leading-5 text-secondary">Compatibility</h4>
+                        <span class="font-semibold text-[14px] leading-5 text-secondary">Induction, Gas, Electric,
+                            Oven</span>
+                    </div>
+                    <hr>
+                    <div class="five flex justify-between py-4">
+                        <h4 class="font-semibold text-[14px] leading-5 text-secondary">Origin</h4>
+                        <span class="font-semibold text-[14px] leading-5 text-secondary">Hand-poured in Tennessee,
+                            USA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side px-8">
+                <img src="./assets/image/Products/frying_pan3d.webp" alt="frying_pan3d" class="max-w-full rounded-2xl">
+            </div>
+        </div>
+    </section>
+    <section class="Kitchen py-12 px-16">
+        <div class="container mx-auto">
+            <div class="Kitchen_Tales flex flex-col gap-12">
+                <div class="review flex justify-between items-center">
+                    <div class="one">
+                        <h2 class="font-medium text-[32px] leading-10">Kitchen Tales</h2>
+                        <p class="font-normal leading-6 text-secondary">Real stories from our community of cooks.</p>
+                    </div>
+                    <div class="btn px-8 py-4 rounded-xl border border-brown">
+                        <button class="font-semibold text-[14px] leading-5 text-brown">WRITE A REVIEW</button>
+                    </div>
+                </div>
+                <div class="feedback grid grid-cols-3 gap-6">
+                    <div class="one flex flex-col gap-4 bg-[#FFF1EC] p-8 rounded-2xl">
+                        <div class="stars flex items-center">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                        </div>
+                        <div class="content">
+                            <p class="font-normal italic leading-6">"The seasoning on this pan was perfect <br>
+                                right out of the box. I've used it every <br>
+                                day for three months and it's already <br>
+                                my favorite piece of cookware."</p>
+                        </div>
+                        <div class="info flex gap-4 items-center">
+                            <span class="font-bold leading-6 text-brown py-2 px-2 rounded-full bg-[#F5E5DF]">EM</span>
+                            <div class="flex flex-col">
+                                <span class="font-semibold text-[14px] leading-5">Eleanor M. </span>
+                                <span class="font-medium text-[12px] leading-4 text-secondary">Verified Buyer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two flex flex-col gap-4 bg-[#FFF1EC] p-8 rounded-2xl">
+                        <div class="stars flex items-center">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                        </div>
+                        <div class="content">
+                            <p class="font-normal italic leading-6">"The seasoning on this pan was perfect <br>
+                                right out of the box. I've used it every <br>
+                                day for three months and it's already <br>
+                                my favorite piece of cookware."</p>
+                        </div>
+                        <div class="info flex gap-4 items-center">
+                            <span class="font-bold leading-6 text-brown py-2 px-2 rounded-full bg-[#F5E5DF]">JD</span>
+                            <div class="flex flex-col">
+                                <span class="font-semibold text-[14px] leading-5">Julian D.</span>
+                                <span class="font-medium text-[12px] leading-4 text-secondary">Verified Buyer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three flex flex-col gap-4 bg-[#FFF1EC] p-8 rounded-2xl">
+                        <div class="stars flex items-center">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                            <img src="./assets/image/public/stars.svg" alt="stars">
+                        </div>
+                        <div class="content">
+                            <p class="font-normal italic leading-6">"The seasoning on this pan was perfect <br>
+                                right out of the box. I've used it every <br>
+                                day for three months and it's already <br>
+                                my favorite piece of cookware."</p>
+                        </div>
+                        <div class="info flex gap-4 items-center">
+                            <span class="font-bold leading-6 text-brown py-2 px-2 rounded-full bg-[#F5E5DF]">SA</span>
+                            <div class="flex flex-col">
+                                <span class="font-semibold text-[14px] leading-5">Sarah A.</span>
+                                <span class="font-medium text-[12px] leading-4 text-secondary">Verified Buyer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Complete py-12">
+        <div class="container mx-auto">
+            <div class="Collection flex flex-col gap-12">
+                <h2 class="flex justify-center items-center font-heading font-medium text-[32px] leading-10">Complete
+                    Your Collection</h2>
+                <div class="items grid grid-cols-4 justify-between gap-6">
+                    <div class="one">
+                        <img src="./assets/image/Products/Leather Handle Wrap.webp" alt="Leather" class="rounded-xl">
+                        <h3 class=" mt-1.5 font-semibold text-[14px] leading-5">Leather Handle Wrap</h3>
+                        <span class="font-medium text-[12px] keading-4 text-brown">$24.00</span>
+                    </div>
+                    <div class="two">
+                        <img src="./assets/image/Products/Artisan Scrubber.webp" alt="Artisan" class="rounded-xl">
+                        <h3 class=" mt-1.5 font-semibold text-[14px] leading-5">Artisan Scrubber</h3>
+                        <span class="font-medium text-[12px] keading-4 text-brown">$18.00</span>
+                    </div>
+                    <div class="three">
+                        <img src="./assets/image/Products/Seasoning Oil Blend.webp" alt="oil" class="rounded-xl">
+                        <h3 class=" mt-1.5 font-semibold text-[14px] leading-5">Seasoning Oil Blend</h3>
+                        <span class="font-medium text-[12px] keading-4 text-brown">$16.00</span>
+                    </div>
+                    <!--السبب انو الصورة مش ماشية مع السكاشن الي فوقها-->
+                    <div class="four">
+                        <img src="./assets/image/Products/Signature Beechwood Turner.webp" alt="Signature"
+                            class="rounded-xl">
+                        <h3 class=" mt-1.5 font-semibold text-[14px] leading-5">Signature Beechwood Turner</h3>
+                        <span class="font-medium text-[12px] keading-4 text-brown">$32.00</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer py-12 px-8 bg-[#FFF1EC]">
+        <div class="container mx-auto">
+            <div
+                class="items px-16 hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-12">
+                <div class="SIENNA_KITCHEN flex flex-col gap-4">
+                    <h4 class="font-heading font-normal leading-4 text-brown">SIENNA KITCHEN</h4>
+                    <p class="font-semibold text-[14px] leading-5 text-secondary">Crafting heritage in every
+                        meal.
+                        Premium kitchenware for the
+                        modern home.</p>
+                    <div class="icons flex gap-4">
+                        <img src="./assets/image/public/ball.svg" alt="ball">
+                        <img src="./assets/image/public/rose.svg" alt="rose">
+                        <img src="./assets/image/public/knife.svg" alt="knife">
+                    </div>
+                </div>
+                <div class="SITE_LINKS flex flex-col gap-4">
+                    <h4 class="font-semibold text-[14px] leading-5">SITE LINKS</h4>
+                    <ul class="flex flex-col gap-3 font-semibold text-[14px] leading-4 text-secondary">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Stockists</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="SUPPORT flex flex-col gap-4">
+                    <h4 class="font-semibold text-[14px] leading-5">SUPPORT</h4>
+                    <ul class="flex flex-col gap-3 font-semibold text-[14px] leading-4 text-secondary">
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Care Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="NEWSLETTER flex flex-col gap-6">
+                    <h4 class="font-semibold text-[14px] leading-4">NEWSLETTER</h4>
+                    <p class="font-semibold text-[14px] leading-5 text-secondary">Join our circle for seasonal
+                        recipes
+                        and exclusive launches.</p>
+                    <div class="mail">
+                        <input type="email" placeholder="Email Address"
+                            class="font-semibold text-[14px] text-[#87736B]">
+                        <button class="font-semibold text-[14px] leading-5 text-brown">JOIN</button>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_phone flex justify-between md:hidden">
+                <div
+                    class="home cursor-pointer flex flex-col items-center justify-center  py-1 px-4 rounded-xl bg-[#A0522D1A] w-fit ">
+                    <img src="./assets/image/public/home.svg" alt="home">
+                    <p class="text-[12px] leading-4 font-medium">Home</p>
+                </div>
+                <div class="shop cursor-pointer flex flex-col items-center justify-center">
+                    <img src="./assets/image/public/shop.svg" alt="shop">
+                    <p class="text-[12px] leading-4 font-medium">Shop</p>
+                </div>
+                <div class="cart cursor-pointer flex flex-col items-center justify-center">
+                    <img src="./assets/image/public/cart.svg" alt="cart">
+                    <p class="text-[12px] leading-4 font-medium">Cart</p>
+                </div>
+                <div class="account cursor-pointer flex flex-col items-center justify-center">
+                    <img src="./assets/image/public/account.svg" alt="account">
+                    <p class="text-[12px] leading-4 font-medium">Account</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
