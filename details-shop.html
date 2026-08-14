@@ -49,63 +49,90 @@
         </div>
     </header>
     <!--غلبني كثير تقريبا ساعتين شغل ؟-->
-    <section class="hero py-12 px-16">
-        <div class="container mx-auto grid grid-cols-2 gap-6">
+    <section class="hero px-4 md:py-12 md:px-16">
+        <div class="container mx-auto grid grid-cols-1 justify-items-center md:grid-cols-2 gap-6">
+            <div class="cookware-phone w-full flex justify-center gap-1 flex-wrap md:hidden">
+                <span class="font-medium text-[12px] leading-4 text-secondary">Shop</span>
+                <span class="font-medium text-[12px] leading-4 text-secondary">></span>
+                <span class="font-medium text-[12px] leading-4 text-secondary">COOKWARE</span>
+                <span class="font-medium text-[12px] leading-4 text-secondary">></span>
+                <span class="font-semibold text-[12px] leading-4 text-brown">HERITAGE SKILLET</span>
+            </div>
             <div class="left-side flex gap-6">
-                <div class="sec-img flex flex-col gap-4">
+                <div class="sec-img hidden md:flex flex-col gap-4">
                     <img src="./assets/image/Products/fryingpan-1.webp" alt="fryingpan-1" class="rounded-sm">
                     <img src="./assets/image/Products/fryingpan-2.webp" alt="fryingpan-2" class="rounded-sm">
                     <img src="./assets/image/Products/frying-3.webp" alt="frying-3" class="rounded-sm">
                     <img src="./assets/image/Products/fryingpan-4.webp" alt="fryingpan-4" class="rounded-sm">
                 </div>
                 <div class="base-img">
-                    <img src="./assets/image/Products/frying_pan.webp" alt="frying_pan" class="max-w-full rounded-xl">
+                    <img src="./assets/image/Products/frying_pan.webp" alt="frying_pan"
+                        class="max-w-full rounded-xl hidden md:block">
+                    <img src="./assets/image/Product-Phone/hero-phone.webp" alt="hero-phone"
+                        class="max-w-full block md:hidden rounded-xl">
                 </div>
             </div>
             <div class="right-side flex flex-col gap-2">
-                <div class="cookware flex gap-1">
+                <div class="cookware hidden md:flex gap-1">
                     <span class="font-medium text-[12px] leading-4 text-secondary">COOKWARE</span>
                     <span class="font-medium text-[12px] leading-4 text-secondary">/</span>
                     <span class="font-medium text-[12px] leading-4 text-secondary">CAST IRON</span>
                     <span class="font-medium text-[12px] leading-4 text-secondary">/</span>
                     <span class="font-medium text-[12px] leading-4 text-secondary">HERITAGE SKILLET</span>
                 </div>
+                <div class="cookware-phone font-medium text-[12px] leading-4 text-[#4B5425] flex gap-1 md:hidden">
+                    <span>THE HERITAGE COLLECTION</span>
+                </div>
                 <div class="title pt-4">
-                    <h1 class="font-heading font-semibold text-[48px] leading-14">Heritage Cast Iron <br>
+                    <h1
+                        class="font-heading font-medium text-[24px] leading-8 md:font-semibold md:text-[48px] md:leading-14">
+                        Heritage Cast Iron
                         Skillet</h1>
                 </div>
-                <div class="stars flex items-center gap-4">
-                    <img src="./assets/image/public/stars.svg" alt="stars">
+                <div class="stars flex items-center gap-1 md:gap-4">
+                    <img src="./assets/image/public/stars.svg" alt="stars" class="">
                     <img src="./assets/image/public/stars.svg" alt="stars">
                     <img src="./assets/image/public/stars.svg" alt="stars">
                     <img src="./assets/image/public/stars.svg" alt="stars">
                     <img src="./assets/image/public/star.svg" alt="star">
-                    <span class="font-semibold text-[14px] leading-5 text-secondary">124 Verifed Reviews</span>
+                    <span
+                        class=" font-medium text-[12px] leading-4 md:font-semibold md:text-[14px] md:leading-5 text-secondary flex gap-1.5">124<span
+                            class="hidden md:block">Verifed</span>Reviews</span>
                 </div>
                 <div class="price pt-6 flex flex-col gap-4">
-                    <span class="font-heading font-medium text-[32px] leading-10 text-brown">$128.00</span>
+                    <div class="price-phone flex gap-4 items-center">
+                        <span class="font-heading font-medium text-[32px] leading-10 text-brown">$128.00</span>
+                        <span
+                            class="block md:hidden font-normal text-[18px] leading-7 text-secondary line-through decoration-1 decoration-secondary">$160.00</span>
+                        <button
+                            class="block md:hidden py-1 px-3 bg-[#DDE8AB] text-[#181E00] font-medium text-[12px] leading-4 rounded-[9999px]">-20%</button>
+                    </div>
                     <p class="font-normal leading-6 text-secondary">Pre-seasoned with organic flaxseed oil. A
                         generational <br>
                         piece designed for superior heat retention and a naturally <br>
                         non-stick surface that improves with every use.</p>
 
                 </div>
-                <div class="QUANTITY py-10 flex flex-col gap-2">
-                    <h4 class="font-semibold text-[14px] leading-5">QUANTITY</h4>
-                    <button class="px-2 py-1 bg-[#FBEAE5] rounded-[9999px] w-32 flex justify-around">
+                <div class="QUANTITY py-10 flex gap-4 flex-col md:gap-3">
+                    <div class="title">
+                        <h4 class="font-semibold text-[14px] leading-5">QUANTITY</h4>
+                    </div>
+                    <button class="px-2 py-1 bg-[#FBEAE5] rounded-xl md:rounded-[9999px] md:w-32 flex justify-around">
                         <span>-</span>
                         <span>1</span>
                         <span>+</span>
                     </button>
+                    <div class="btn flex flex-col justify-center gap-4">
+                        <button
+                            class="bg-brown text-white rounded-xl px-3 py-4 md:px-0 md:py-4 flex items-center justify-center gap-4">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="font-semibold md:text-[14px] leading-5">ADD TO CART</span>
+                        </button>
+                        <button class="font-semibold py-5 px-3 md:px-0 text-[14px] leading-5 rounded-xl bg-white">BUY IT
+                            NOW</button>
+                    </div>
                 </div>
-                <div class="btn flex flex-col gap-4">
-                    <button class="bg-brown text-white rounded-xl py-4 flex items-center justify-center gap-4">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <span class="font-semibold text-[14px] leading-5">ADD TO CART</span>
-                    </button>
-                    <button class="font-semibold text-[14px] leading-5 rounded-xl bg-white py-4">BUY IT NOW</button>
-                </div>
-                <div class="lifetime pt-8 flex items-center justify-around gap-6">
+                <div class="lifetime hidden pt-8 md:flex items-center justify-around gap-6">
                     <div class="eco flex items-center gap-4">
                         <img src="./assets/image/public/Eco.webp" alt="Eco">
                         <div class="flex flex-col">
@@ -125,10 +152,13 @@
         </div>
     </section>
     <section class="Technical py-12 bg-white">
-        <div class="container mx-auto grid grid-cols-2 gap-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-0">
             <div class="left-side flex flex-col gap-6">
-                <h2 class="font-heading font-medium text-[32px] leading-10">Technical Specifications</h2>
-                <p class="font-normal leading-6 text-secondary">Every Sienna Kitchen piece is engineered for
+                <h2
+                    class="font-semibold text-[14px] leading-5 md:font-heading md:font-medium  md:text-[32px] md:leading-10">
+                    Technical Specifications</h2>
+                <p class="font-normal leading-6 text-secondary hidden md:block">Every Sienna Kitchen piece is engineered
+                    for
                     performance. <br>
                     From the thickness of the base to the curvature of the <br>
                     handle, no detail is overlooked.</p>
@@ -162,7 +192,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right-side px-8">
+            <div class="right-side hidden md:block px-8">
                 <img src="./assets/image/Products/frying_pan3d.webp" alt="frying_pan3d" class="max-w-full rounded-2xl">
             </div>
         </div>
@@ -170,16 +200,28 @@
     <section class="Kitchen py-12 px-16">
         <div class="container mx-auto">
             <div class="Kitchen_Tales flex flex-col gap-12">
-                <div class="review flex justify-between items-center">
+                <div class="review flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
                     <div class="one">
-                        <h2 class="font-medium text-[32px] leading-10">Kitchen Tales</h2>
-                        <p class="font-normal leading-6 text-secondary">Real stories from our community of cooks.</p>
+                        <span class="block md:hidden font-heading font-medium text-[32px] leading-10">Community
+                            Feedback</span>
+                        <h2 class=" hidden md:block font-medium text-[32px] leading-10">Kitchen Tales</h2>
+                        <p class=" hidden md:block font-normal leading-6 text-secondary">Real stories from our community
+                            of cooks.</p>
                     </div>
-                    <div class="btn px-8 py-4 rounded-xl border border-brown">
-                        <button class="font-semibold text-[14px] leading-5 text-brown">WRITE A REVIEW</button>
+                    <div class="fedback-phone flex gap-4 md:hidden">
+                        <span class="font-bold text-[48px] leading-12">4.8</span>
+                        <img src="./assets/image/public/stars.svg" alt="stars">
+                        <img src="./assets/image/public/stars.svg" alt="stars">
+                        <img src="./assets/image/public/stars.svg" alt="stars">
+                        <img src="./assets/image/public/stars.svg" alt="stars">
+                        <img src="./assets/image/public/stars.svg" alt="stars">
+                    </div>
+                    <div class="btn px-8 py-4 rounded-xl border border-brown text-center">
+                        <button class="font-semibold text-[14px] leading-5 text-secondary md:text-brown">WRITE A
+                            REVIEW</button>
                     </div>
                 </div>
-                <div class="feedback grid grid-cols-3 gap-6">
+                <div class="feedback grid grid-cols-1 text-center md:grid-cols-3 gap-6">
                     <div class="one flex flex-col gap-4 bg-[#FFF1EC] p-8 rounded-2xl">
                         <div class="stars flex items-center">
                             <img src="./assets/image/public/stars.svg" alt="stars">
@@ -253,9 +295,19 @@
     <section class="Complete py-12">
         <div class="container mx-auto">
             <div class="Collection flex flex-col gap-12">
-                <h2 class="flex justify-center items-center font-heading font-medium text-[32px] leading-10">Complete
+                <h2 class=" hidden sm:flex justify-center items-center font-heading font-medium text-[32px] leading-10">
+                    Complete
                     Your Collection</h2>
-                <div class="items grid grid-cols-4 justify-between gap-6">
+                <h2
+                    class="flex justify-between items-center px-4 font-heading font-blod text-[20px] leading-10 sm:hidden">
+                    You May Also Like
+                    <span class="flex gap-4">
+                        <img src="./assets/image/public/arrow-left.svg" alt="arrow-img" class=" px-2 py-2 border border-[#DAC1B8] rounded-full">
+                        <img src="./assets/image/public/arrow-rightt.svg" alt="arrow-img" class="px-2 py-2 border border-[#DAC1B8] rounded-full">
+                    </span>
+                </h2>
+                <div
+                    class="items hidden sm:grid grid-cols-2 md:grid-cols-3 justify-center lg:grid-cols-4 md:justify-between gap-6">
                     <div class="one">
                         <img src="./assets/image/Products/Leather Handle Wrap.webp" alt="Leather" class="rounded-xl">
                         <h3 class=" mt-1.5 font-semibold text-[14px] leading-5">Leather Handle Wrap</h3>
@@ -279,9 +331,23 @@
                         <span class="font-medium text-[12px] keading-4 text-brown">$32.00</span>
                     </div>
                 </div>
-
+                <div class="item-phone px-4 md:px-0 flex items-center justify-between sm:hidden">
+                    <div class="one">
+                        <img src="./assets/image/Product-Phone/Brass.webp" alt="Brass" class="rounded-xl">
+                        <div class="details flex flex-col gap-1">
+                            <h4 class="font-heading font-medium text-[20px] leading-7">Brass Dutch Oven</h4>
+                            <span class="font-bold leading-6 text-brown">$210.00</span>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <img src="./assets/image/Product-Phone/Artisan.webp" alt="Artisan" class="rounded-xl">
+                        <div class="details flex flex-col gap-1">
+                            <h4 class="font-heading font-medium text-[20px] leading-7">Artisan Tool Set</h4>
+                            <span class="font-bold leading-6 text-brown">$45.00</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
     <footer class="footer py-12 px-8 bg-[#FFF1EC]">
