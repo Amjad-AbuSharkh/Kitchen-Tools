@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./assets/src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-primary">
+    <div class="log-in grid grid-cols-1 md:grid-cols-2 gap-3 py-8">
+        <div class="left-side relative hidden md:block">
+                <img src="./assets/image/public/login.webp" alt="log-in" class="max-w-full">
+                <div class="details absolute top-[50vh] left-[10vh] gap-2">
+                    <span class="font-medium text-[12px] leading-4 text-white">ESTABLISHED 1984</span>
+                    <h1 class="font-heading font-semibold text-[48px] leading-15 text-white">The heart of the <br>
+                        home, <br>
+                        refined for the <br>
+                        modern era.</h1>
+                    <button class="w-12 h-1 bg-brown"></button>
+                </div>
+        </div>
+        <div class="hero-phone relative h-full flex justify-center md:hidden">
+            <img src="./assets/image/public/welcom-hero-phone.webp" alt="welcom-hero-phone">
+            <div class="details h-full absolute flex flex-col justify-end py-2.5">
+                <h1 class="font-heading font-semibold text-[32px] leading-10 text-[#221A17]">Sienna Kitchen</h1>
+                <p class="font-normal leading-6 text-secondary">Crafted for the home chef.</p>
+            </div>
+        </div>
+        <div class="right-side w-full relative p-16">
+            <div class="kitchen flex flex-col gap-12">
+                <div class="welcom-back flex flex-col gap-2">
+                    <span class="hidden md:flex gap-1">
+                        <img src="./assets/image/public/right-logo.svg" alt="right-logo" class="max-w-full">
+                        <span class="font-heading font-normal leading-6">KITCHEN&CO.</span>
+                    </span>
+                    <h1 class="font-heading font-medium text-[32px] leading-10">Welcome Back</h1>
+                    <p class="font-normal leading-6 text-secondary hidden md:block">Sign in to access your curated
+                        collection and <br>
+                        kitchen insights.</p>
+                </div>
+                <div class="email flex flex-col gap-6">
+                    <label for="" class="flex flex-col gap-2">
+                        <span class="font-semibold text-[14px] leading-5 text-secondary">Email or Phone Number</span>
+                        <input type="email" name="" id="" placeholder="Enter your Email"
+                            md:placeholder="name@example.com"
+                            class="bg-[#FFF1EC] md:bg-[#DAC1B8] py-4 px-6 rounded-xl outline-0 border-0">
+                    </label>
+                    <label for="" class="flex flex-col gap-2">
+                        <span class="flex justify-between">
+                            <span class="font-semibold text-[14px] leading-5 text-secondary">Password</span>
+                            <span class="font-semibold text-[14px] leading-5 text-brown md:text-secondary">Forgot
+                                password?</span>
+                        </span>
+                        <input type="password" placeholder="••••••••"
+                            class="bg-[#FFF1EC] md:bg-[#DAC1B8] px-6 py-4 rounded-xl outline-0 border-0">
+                    </label>
+                    <label for="" class="flex gap-2">
+                        <input type="submit" value="Log In"
+                            class="bg-brown relative w-full px-6 py-4 rounded-full md:rounded-xl text-white font-medium md:font-semibold leading-5 text-[20px] md:text-[14px] cursor-pointer">
+                    </label>
+                </div>
+                <div class="OR flex justify-center">
+                    <span class="font-medium text-[12px] leading-4 text-[#54433C99]">OR CONTINUE WITH</span>
+                </div>
+                <div class="btn flex justify-center gap-2 md:gap-4">
+                    <button
+                        class="px-7 py-2 md:px-14 md:py-3 rounded-xl bg-primary md:bg-white border-2 md:border border-[#DAC1B880] md:border-brown">Google</button>
+                    <button
+                        class="px-7 py-2 md:px-14 md:py-3 rounded-xl bg-primary md:bg-white border-2 md:border border-[#DAC1B880] md:border-brown">Apple</button>
+                </div>
+                <div class="create flex justify-center gap-1.5">
+                    <span class="font-normal md:leading-6 text-secondary">New to Kitchen&Co.?</span>
+                    <a href="#" class="font-semibold md:text-[14px] md:leading-5 text-brown">Create an account</a>
+                </div>
+            </div>
+            <div class="footer flex relative">
+                <p
+                    class=" hidden md:flex justify-center w-full bottom-2 font-medium texxt-[12px] leading-4 text-[#54433C66]">
+                    © 2024 Kitchen&Co. Artisanal Goods. All rights reserved.</p>
+                <div class="phone-details w-full flex justify-center gap-10 py-5 md:hidden">
+                    <span class="font-medium text-[12px] leading-4 text-[#221A17] opacity-[0.5]">Privacy Policy</span>
+                    <span class="font-medium text-[12px] leading-4 text-[#221A17] opacity-[0.5]">Terms of Service</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
