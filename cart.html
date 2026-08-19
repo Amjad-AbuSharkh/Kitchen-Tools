@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./assets/src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-primary">
+    <header class="bg-primary px-4 md:px-16 h-20 flex flex-col justify-center items-center">
+        <div class="container mx-auto flex justify-between items-center">
+            <nav class="lists hidden md:block">
+                <ul class="flex gap-5 capitalize text-secondary font-semibold">
+                    <li>
+                        <a href="./index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="underline text-brown">shop</a>
+                    </li>
+                    <li>
+                        <a href="#">about</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu block md:hidden text-brown">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo flex gap-5">
+                <img src="./assets/image/public/icon-logo.svg" alt="icon" class="max-w-full hidden md:block">
+                <img src="./assets/image/public/text-logo.svg" alt="text" class="max-w-full">
+            </div>
+            <!--هل الافضل نعطي اللون للايقونة بشكل مباشر ولا بزبط للاب المباشر-->
+            <div class="icon hidden md:flex gap-5 font-semibold">
+                <i class="fa-brands fa-sistrix text-secondary cursor-pointer"></i>
+                <i class="fa-solid fa-user bg-brown text-white rounded-2xl cursor-pointer"></i>
+                <i class="fa-solid fa-cart-shopping text-secondary cursor-pointer"></i>
+            </div>
+            <div class="bag-shopping block md:hidden text-brown">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="selection">
+            <div class="container mx-auto grid grid-cols-3">
+                <div class="left-side py-5 col-span-2">
+                    <div class="cart-header flex justify-between mb-10">
+                        <h1 class="font-heading font-semibold text-[48px] leading-14">Your Selection</h1>
+                        <span class="font-semibold text-[14px] leading-5 text-secondary">3 ITEMS</span>
+                    </div>
+                    <table class="w-full bg-[#FFF1EC]">
+                        <thead>
+                            <tr>
+                                <td class=" py-10 px-5 font-semibold text-[14px] leading-5 text-secondary">PRODUCT</td>
+                                <td class=" py-10 px-5 font-semibold text-[14px] leading-5 text-secondary">PRICE</td>
+                                <td class=" py-10 px-5 font-semibold text-[14px] leading-5 text-secondary">QUANTITY</td>
+                                <td class=" py-10 px-5 font-semibold text-[14px] leading-5 text-secondary">SUBTOTAL</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-5">
+                                    <div class="flex gap-4 items-center mb-5">
+                                        <img src="./assets/image/Products/Signature_Dutch Oven.webp"
+                                            alt="Signature_Dutch" class="w-24 h-24 rounded-xl">
+                                        <div>
+                                            <h4 class="font-heading font-normal leading-6">Signature Dutch Oven</h4>
+                                            <p class="font-semibold text-[14px] leading-5 text-secondary">Color: Sienna
+                                                Earth</p>
+                                            <button class="font-medium text-[12px] leading-4 text-brown">Remove</button>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="font-normal text-[18px] leading-7 text-secondary px-5">$185.00</td>
+                                <td>
+                                    <button class="bg-primary px-5 py-1 flex gap-4 rounded-xl">
+                                        <span>-</span>
+                                        <span>1</span>
+                                        <span>+</span>
+                                    </button>
+                                </td>
+                                <td class="font-normal text-[18px] leading-7 text-secondary px-5">
+                                    $185.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-5">
+                                    <div class="flex gap-4 items-center mb-5">
+                                        <img src="./assets/image/Products/Artisan Knife Trio.webp" alt="Artisan"
+                                            class="w-24 h-24 rounded-xl">
+                                        <div>
+                                            <h4 class="font-heading font-normal leading-6">Artisan Knife Trio</h4>
+                                            <p class="font-semibold text-[14px] leading-5 text-secondary">Material:
+                                                Walnut & Steel</p>
+                                            <button class="font-medium text-[12px] leading-4 text-brown">Remove</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class=" px-5 font-normal text-[18px] leading-7 text-secondary">$65.00</td>
+                                <td>
+                                    <button class="bg-primary px-5 py-1 flex gap-4 rounded-xl">
+                                        <span>-</span>
+                                        <span>1</span>
+                                        <span>+</span>
+                                    </button>
+                                </td>
+                                <td class="px-5 font-normal text-[18px] leading-7 text-secondary">
+                                    $65.00
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form">
+                        <label for="">
+                            PROMOTION CODE
+                            <input type="text" placeholder="Enter Code"
+                                class="py-2.5 px-4 rounded-lg bg-[#FBEAE5] border-0 outline-0">
+                            <button>APPLY</button>
+                        </label>
+                    </div>
+                </div>
+                <div class="right-side bg-[#F5E5DF] border border-[#DAC1B81A] rounded-xl flex flex-col p-8 gap-4">
+                    <h2 class="font-heading font-medium text-[32px] leading-10">Order Summary</h2>
+                    <div class="order flex flex-col gap-4">
+                        <div class="sub flex justify-between">
+                            <h3 class="text-secondary">Subtotal</h3>
+                            <span>$250.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <h3 class="text-secondary">Estimated Shipping</h3>
+                            <span>$15.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <h3 class="text-secondary">Tax (8%)</h3>
+                            <span>$14.67</span>
+                        </div>
+                    </div>
+                    <div class="total flex justify-between items-center py-4">
+                        <h3 class="font-heading font-medium text-[32px] leading-10">Total</h3>
+                        <span class="font-heading font-semibold text-[48px] leading-14 text-brown">$279.67</span>
+                    </div>
+                    <button
+                        class="bg-brown py-6 flex gap-4 justify-center text-white rounded-xl font-semibold text-[14px] leading-5">PROCEED
+                        TO CHECKOUT</button>
+                    <div class="flex-1 flex-col">
+                        <div class="flex gap-2 justify-center mb-2">
+                            <img src="./assets/image/public/close.svg" alt="close">
+                            <p class="font-medium text-[12px] leading-4 text-secondary">Secure Encrypted Checkout</p>
+                        </div>
+                        <div class="icons flex gap-2 justify-center">
+                            <img src="./assets/image/public/card-one.svg" alt="card-one" class="cursor-pointer">
+                            <img src="./assets/image/public/card-two.svg" alt="card-two" class="cursor-pointer">
+                            <img src="./assets/image/public/card-three.svg" alt="card-three" class="cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
