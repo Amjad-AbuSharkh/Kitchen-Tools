@@ -50,14 +50,16 @@
     </header>
     <main>
         <section class="selection">
-            <div class="container mx-auto grid grid-cols-3">
+            <div class="container mx-auto grid md:grid-cols-3">
                 <div class="left-side py-5 col-span-2">
                     <div class="cart-header flex justify-between mb-10">
-                        <h1 class="font-heading font-semibold text-[48px] leading-14">Your Selection</h1>
-                        <span class="font-semibold text-[14px] leading-5 text-secondary">3 ITEMS</span>
+                        <h1
+                            class="font-heading font-medium md:font-semibold text-[24px] md:text-[48px] leading-8 md:leading-14">
+                            Your Selection</h1>
+                        <span class="font-semibold text-[14px] leading-5 text-secondary hidden md:block">3 ITEMS</span>
                     </div>
                     <table class="w-full bg-[#FFF1EC]">
-                        <thead>
+                        <thead class="">
                             <tr>
                                 <td class=" py-10 px-5 font-semibold text-[14px] leading-5 text-secondary">PRODUCT</td>
                                 <td class=" py-10 px-5 font-semibold text-[14px] leading-5 text-secondary">PRICE</td>
@@ -71,7 +73,7 @@
                                     <div class="flex gap-4 items-center mb-5">
                                         <img src="./assets/image/Products/Signature_Dutch Oven.webp"
                                             alt="Signature_Dutch" class="w-24 h-24 rounded-xl">
-                                        <div>
+                                        <div class="hidden md:block">
                                             <h4 class="font-heading font-normal leading-6">Signature Dutch Oven</h4>
                                             <p class="font-semibold text-[14px] leading-5 text-secondary">Color: Sienna
                                                 Earth</p>
@@ -97,7 +99,7 @@
                                     <div class="flex gap-4 items-center mb-5">
                                         <img src="./assets/image/Products/Artisan Knife Trio.webp" alt="Artisan"
                                             class="w-24 h-24 rounded-xl">
-                                        <div>
+                                        <div class="hidden md:block">
                                             <h4 class="font-heading font-normal leading-6">Artisan Knife Trio</h4>
                                             <p class="font-semibold text-[14px] leading-5 text-secondary">Material:
                                                 Walnut & Steel</p>
@@ -119,16 +121,31 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="form">
-                        <label for="">
-                            PROMOTION CODE
-                            <input type="text" placeholder="Enter Code"
-                                class="py-2.5 px-4 rounded-lg bg-[#FBEAE5] border-0 outline-0">
-                            <button>APPLY</button>
-                        </label>
+                    <div class="form w-full hidden md:flex gap-6 mt-2">
+                        <div class="one">
+                            <label for="" class="font-semibold text-[14px] leading-5">
+                                PROMOTION CODE
+                            </label>
+                            <div class="btn">
+                                <input type="text" placeholder="Enter Code"
+                                    class="py-2.5 px-4 rounded-lg bg-[#FBEAE5] border-0 outline-0">
+                                <button
+                                    class=" bg-[#506168] py-2.5 px-6 rounded-lg font-semibold text-[14px] leading-5 text-[#ffffff]">APPLY</button>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <label for="" class="font-semibold text-[14px] leading-5">
+                                ORDER NOTE
+                            </label>
+                            <div class="btn">
+                                <input type="text" placeholder="Special instructions for delivery..."
+                                    class="py-2.5 px-4 rounded-lg bg-[#FBEAE5] border-0 outline-0">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="right-side bg-[#F5E5DF] border border-[#DAC1B81A] rounded-xl flex flex-col p-8 gap-4">
+                <div
+                    class="right-side bg-[#F5E5DF] border border-[#DAC1B81A] rounded-xl hidden md:flex flex-col p-8 gap-4">
                     <h2 class="font-heading font-medium text-[32px] leading-10">Order Summary</h2>
                     <div class="order flex flex-col gap-4">
                         <div class="sub flex justify-between">
@@ -165,6 +182,168 @@
                 </div>
             </div>
         </section>
+        <section class="complete py-10">
+            <div class="container mx-auto">
+                <div class="title-kitchen flex justify-between items-center py-8">
+                    <div>
+                        <span class="font-semibold text-[14px] leading-5 text-brown hidden md:block">ESSENTIALS</span>
+                        <h2 class="font-medium font-heading text-[24px] md:text-[32px] leading-10">Complete Your Kitchen
+                        </h2>
+                    </div>
+                    <div class="arrow hidden md:flex gap-3">
+                        <img src="./assets/image/public/arrow-left.svg" alt="arrow-left"
+                            class="rounded-full py-2 px-2 bg-[#FBEAE5] cursor-pointer">
+                        <img src="./assets/image/public/arrow-rightt.svg" alt="arrow-rightt"
+                            class="rounded-full py-2 px-2 bg-[#FBEAE5] cursor-pointer">
+                    </div>
+                </div>
+                <div class="products grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="one flex flex-col gap-2">
+                        <img src="./assets/image/Products/Silicone Spatula.webp" alt="Silicone"
+                            class="w-full rounded-xl">
+                        <div class="details">
+                            <div class="head flex justify-between">
+                                <h4 class="font-heading font-normal leading-6">Silicone Spatula</h4>
+                                <span class="font-heading font-normal leading-6 text-brown">$18.00</span>
+                            </div>
+                            <div class="foot">
+                                <p class="font-normal leading-6 text-secondary">Heat resistant, Oak handle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two flex flex-col gap-2">
+                        <img src="./assets/image/Products/Measuring Set.webp" alt="Measuring" class="w-full rounded-xl">
+                        <div class="details">
+                            <div class="head flex justify-between">
+                                <h4 class="font-heading font-normal leading-6">Measuring Set</h4>
+                                <span class="font-heading font-normal leading-6 text-brown">$32.00</span>
+                            </div>
+                            <div class="foot">
+                                <p class="font-normal leading-6 text-secondary">Polished Brass finish</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three hidden md:flex flex-col gap-2">
+                        <img src="./assets/image/Products/Salt & Pepper Mill.webp" alt="Salt" class="w-full rounded-xl">
+                        <div class="details">
+                            <div class="head flex justify-between">
+                                <h4 class="font-heading font-normal leading-6">Salt & Pepper Mill</h4>
+                                <span class="font-heading font-normal leading-6 text-brown">$45.00</span>
+                            </div>
+                            <div class="foot">
+                                <p class="font-normal leading-6 text-secondary">Adjustable Ceramic Core</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four hidden md:flex flex-col gap-2">
+                        <img src="./assets/image/Products/Organic Linen Towels.webp" alt="Organic"
+                            class="w-full rounded-xl md:h-77">
+                        <div class="details">
+                            <div class="head flex justify-between">
+                                <h4 class="font-heading font-normal leading-6">Organic Linen Towels</h4>
+                                <span class="font-heading font-normal leading-6 text-brown">$33.00</span>
+                            </div>
+                            <div class="foot">
+                                <p class="font-normal leading-6 text-secondary">Set of 3, Sandstone</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="right-side bg-[#F5E5DF] border border-[#DAC1B81A] rounded-xl flex flex-col justify-items-center w-full p-4 gap-2 md:hidden">
+            <h2 class="font-heading font-medium text-[20px] leading-5">Order Summary</h2>
+            <div class="order flex flex-col gap-2">
+                <div class="sub flex justify-between">
+                    <h3 class="text-secondary">Subtotal</h3>
+                    <span>$250.00</span>
+                </div>
+                <div class="flex justify-between">
+                    <h3 class="text-secondary">Estimated Shipping</h3>
+                    <span>$15.00</span>
+                </div>
+                <div class="flex justify-between">
+                    <h3 class="text-secondary">Tax (8%)</h3>
+                    <span>$14.67</span>
+                </div>
+            </div>
+                <div class="btn flex flex-col gap-2 justify-center items-center">
+                    <label for=""">Discount Code</label>
+                    <input type="text" name="" id="" placeholder="Enter code" class="bg-white px-2 py-2.5 rounded-lg">
+                </div>
+            <div class="total flex justify-between items-center py-2">
+                <h3 class="font-heading font-medium text-[20px] leading-5">Total</h3>
+                <span class="font-heading font-semibold text-[20px] leading-5 text-brown">$279.67</span>
+            </div>
+        </div>
+        <footer class="footer py-12 px-8 bg-[#FFF1EC]">
+            <div class="container mx-auto">
+                <div
+                    class="items px-16 hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-12">
+                    <div class="SIENNA_KITCHEN flex flex-col gap-4">
+                        <h4 class="font-heading font-normal leading-4 text-brown">SIENNA KITCHEN</h4>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">Crafting heritage in every
+                            meal.
+                            Premium kitchenware for the
+                            modern home.</p>
+                        <div class="icons flex gap-4">
+                            <img src="./assets/image/public/ball.svg" alt="ball">
+                            <img src="./assets/image/public/rose.svg" alt="rose">
+                            <img src="./assets/image/public/knife.svg" alt="knife">
+                        </div>
+                    </div>
+                    <div class="SITE_LINKS flex flex-col gap-4">
+                        <h4 class="font-semibold text-[14px] leading-5">SITE LINKS</h4>
+                        <ul class="flex flex-col gap-3 font-semibold text-[14px] leading-4 text-secondary">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Stockists</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="SUPPORT flex flex-col gap-4">
+                        <h4 class="font-semibold text-[14px] leading-5">SUPPORT</h4>
+                        <ul class="flex flex-col gap-3 font-semibold text-[14px] leading-4 text-secondary">
+                            <li><a href="#">Shipping & Returns</a></li>
+                            <li><a href="#">Care Guide</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Warranty</a></li>
+                        </ul>
+                    </div>
+                    <div class="NEWSLETTER flex flex-col gap-6">
+                        <h4 class="font-semibold text-[14px] leading-4">NEWSLETTER</h4>
+                        <p class="font-semibold text-[14px] leading-5 text-secondary">Join our circle for seasonal
+                            recipes
+                            and exclusive launches.</p>
+                        <div class="mail">
+                            <input type="email" placeholder="Email Address"
+                                class="font-semibold text-[14px] text-[#87736B]">
+                            <button class="font-semibold text-[14px] leading-5 text-brown">JOIN</button>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_phone flex justify-between md:hidden">
+                    <div
+                        class="home cursor-pointer flex flex-col items-center justify-center  py-1 px-4 rounded-xl bg-[#A0522D1A] w-fit ">
+                        <img src="./assets/image/public/home.svg" alt="home">
+                        <p class="text-[12px] leading-4 font-medium">Home</p>
+                    </div>
+                    <div class="shop cursor-pointer flex flex-col items-center justify-center">
+                        <img src="./assets/image/public/shop.svg" alt="shop">
+                        <p class="text-[12px] leading-4 font-medium">Shop</p>
+                    </div>
+                    <div class="cart cursor-pointer flex flex-col items-center justify-center">
+                        <img src="./assets/image/public/cart.svg" alt="cart">
+                        <p class="text-[12px] leading-4 font-medium">Cart</p>
+                    </div>
+                    <div class="account cursor-pointer flex flex-col items-center justify-center">
+                        <img src="./assets/image/public/account.svg" alt="account">
+                        <p class="text-[12px] leading-4 font-medium">Account</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 
