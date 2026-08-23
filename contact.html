@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./assets/src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-primary">
+    <header class="bg-primary px-4 md:px-16 h-20 flex flex-col justify-center items-center">
+        <div class="container mx-auto flex justify-between items-center">
+            <nav class="lists hidden md:block">
+                <ul class="flex gap-5 capitalize text-secondary font-semibold">
+                    <li>
+                        <a href="./index.html" class="underline text-brown">home</a>
+                    </li>
+                    <li>
+                        <a href="./shop.html">shop</a>
+                    </li>
+                    <li>
+                        <a href="">about</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu block md:hidden text-brown">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo flex gap-5">
+                <img src="./assets/image/public/icon-logo.svg" alt="icon" class="max-w-full hidden md:block">
+                <img src="./assets/image/public/text-logo.svg" alt="text" class="max-w-full">
+            </div>
+            <!--هل الافضل نعطي اللون للايقونة بشكل مباشر ولا بزبط للاب المباشر-->
+            <div class="icon hidden md:flex gap-5 font-semibold">
+                <a href="">
+                    <i class="fa-brands fa-sistrix text-secondary
+                    "></i>
+                </a>
+                <a href="log-in.html">
+                    <i class="fa-solid fa-user bg-brown text-white rounded-2xl
+                    "></i>
+                </a>
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping text-secondary
+                    "></i>
+                </a>
+            </div>
+            <div class="bag-shopping block md:hidden text-brown">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <main class="py-8">
+        <section>
+            <div class="container mx-auto grid grid-cols-2">
+                <div class="left-side flex flex-col gap-8">
+                    <div class="contact flex flex-col gap-6 p-8 bg-[#FFF1EC] rounded-xl">
+                        <div class="one flex items-center justify-between">
+                            <div class="info flex items-center gap-4">
+                                <span
+                                    class="w-8 h-8 text-white rounded-full flex items-center justify-center bg-brown">1</span>
+                                <h1 class="font-heading leading-6 font-normal">CONTACTINFORMATION</h1>
+                            </div>
+                            <button class="font-medium text-[12px] leading-4 text-brown">EDIT</button>
+                        </div>
+                        <div class="two flex flex-col gap-4">
+                            <div class="flex flex-col gap-1">
+                                <label for="email" class="font-medium text-[12px] leading-4 text-secondary">EMAIL
+                                    ADDRESS</label>
+                                <input type="email" name="" id="email" placeholder="alex.rivera@example.com"
+                                    class="py-4.5 px-4 bg-primary rounded-lg font-normal text-[#9CA3AF]">
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="checkbox" id="check">
+                                <label for="check">Email me with news and offers</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="SHIPPING p-8 flex flex-col gap-6 bg-[#FFF1EC] rounded-xl">
+                        <div class="address flex items-center gap-4">
+                            <span
+                                class="w-8 h-8 rounded-full font-semibold text-[14px] leading-5 bg-[#EFDFD9] flex items-center justify-center text-secondary">2</span>
+                            <h2 class="font-heading font-normal leading-6">SHIPPING ADDRESS</h2>
+                        </div>
+                        <div class="form grid grid-cols-2 gap-2">
+                            <div class="first-name flex flex-col gap-1">
+                                <label for="name" class="font-medium text-[12px] leading-4 text-secondary">
+                                    FIRST NAME
+                                </label>
+                                <input type="text" name="" id="name" class="bg-primary rounded-lg py-4.5 px-4">
+                            </div>
+                            <div class="last-name flex flex-col gap-1">
+                                <label for="last-name" class="font-medium text-[12px] leading-4 text-secondary">
+                                    LAST NAME
+                                </label>
+                                <input type="text" name="" id="last-name" class="bg-primary rounded-lg py-4.5 px-4">
+                            </div>
+                            <div class="address flex flex-col gap-1 col-span-2">
+                                <label for="address" class="font-medium text-[12px] leading-4 text-secondary">
+                                    ADDRESS
+                                </label>
+                                <input type="text" id="address" placeholder="Street address, P.O. box, company name"
+                                    class="bg-primary rounded-lg py-4.5 px-4">
+                            </div>
+                            <div class="apartment flex flex-col gap-1 col-span-2">
+                                <label for="address" class="font-medium text-[12px] leading-4 text-secondary">
+                                    APARTMENT, SUITE, ETC. (OPTIONAL)
+                                </label>
+                                <input type="text" id="address" class="bg-primary rounded-lg py-4.5 px-4">
+                            </div>
+                            <div class="cvv flex flex-col gap-1">
+                                <label for="last-name" class="font-medium text-[12px] leading-4 text-secondary">
+                                    CITY
+                                </label>
+                                <input type="text" name="" id="last-name" class="bg-primary rounded-lg py-4.5 px-4">
+                            </div>
+                            <div class="POSTAL CODE flex flex-col gap-1">
+                                <label for="last-name" class="font-medium text-[12px] leading-4 text-secondary">
+                                    POSTAL CODE
+                                </label>
+                                <input type="text" name="" id="last-name" class="bg-primary rounded-lg py-4.5 px-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="PAYMENT_METHOD p-8 flex flex-col gap-6 bg-[#FFF1EC] rounded-xl">
+                        <div class="PAYMENT flex items-center gap-4">
+                            <span
+                                class="w-8 h-8 rounded-full font-semibold text-[14px] leading-5 bg-[#EFDFD9] flex items-center justify-center text-secondary">3</span>
+                            <h2 class="font-heading font-normal leading-6">PAYMENT METHOD</h2>
+                        </div>
+                        <div class="Credit_Card flex flex-col gap-4 border-3 border-[#FBEAE5] rounded-xl">
+                            <div class="card flex justify-between items-center p-4 bg-[#FBEAE5] border-b border-brown">
+                                <div class="flex gap-2 items-center">
+                                    <img src="./assets/image/public/Input.svg" alt="input">
+                                    <span>Credit Card</span>
+                                </div>
+                                <img src="./assets/image/public/Container.svg" alt="container" class="max-w-full">
+                            </div>
+                            <div class="number">
+                                <div class="CARD_NUMBER grid grid-cols-2 gap-4 p-8 rounded-xl">
+                                    <div class="flex flex-col gap-1 col-span-2">
+                                        <label for="card-number"
+                                            class="font-medium text-[12px] leading-4 text-secondary">
+                                            CARD NUMBER
+                                        </label>
+                                        <input type="text" name="" id="card-number" placeholder="0000 0000 0000 0000"
+                                            class="bg-primary rounded-lg py-4.5 px-4">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <label for="MM/YY"
+                                            class="font-medium text-[12px] leading-4 text-secondary">
+                                            EXPIRATION DATE (MM/YY)
+                                        </label>
+                                        <input type="text" name="" id="MM/YY" placeholder="MM / YY"
+                                            class="bg-primary rounded-lg py-4.5 px-4">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <label for="CVV"
+                                            class="font-medium text-[12px] leading-4 text-secondary">
+                                            SECURITY CODE
+                                        </label>
+                                        <input type="text" name="" id="CVV" placeholder="CVV"
+                                            class="bg-primary rounded-lg py-4.5 px-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
