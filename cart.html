@@ -20,13 +20,13 @@
                         <a href="./index.html">home</a>
                     </li>
                     <li>
-                        <a href="#" class="underline text-brown">shop</a>
+                        <a href="./shop.html" class="underline text-brown">shop</a>
                     </li>
                     <li>
                         <a href="#">about</a>
                     </li>
                     <li>
-                        <a href="#">contact</a>
+                        <a href="./contact.html">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -39,9 +39,15 @@
             </div>
             <!--هل الافضل نعطي اللون للايقونة بشكل مباشر ولا بزبط للاب المباشر-->
             <div class="icon hidden md:flex gap-5 font-semibold">
-                <i class="fa-brands fa-sistrix text-secondary cursor-pointer"></i>
-                <i class="fa-solid fa-user bg-brown text-white rounded-2xl cursor-pointer"></i>
-                <i class="fa-solid fa-cart-shopping text-secondary cursor-pointer"></i>
+                <a href="">
+                    <i class="fa-brands fa-sistrix text-secondary cursor-pointer"></i>
+                </a>
+                <a href="./log-in.html">
+                    <i class="fa-solid fa-user bg-brown text-white rounded-2xl cursor-pointer"></i>
+                </a>
+                <a href="./cart.html">
+                    <i class="fa-solid fa-cart-shopping text-secondary cursor-pointer"></i>
+                </a>
             </div>
             <div class="bag-shopping block md:hidden text-brown">
                 <i class="fa-solid fa-bag-shopping"></i>
@@ -199,8 +205,10 @@
                 </div>
                 <div class="products grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <div class="one flex flex-col gap-2">
-                        <img src="./assets/image/Products/Silicone Spatula.webp" alt="Silicone"
-                            class="w-full rounded-xl">
+                        <a href="./shop.html">
+                            <img src="./assets/image/Products/Silicone Spatula.webp" alt="Silicone"
+                                class="w-full rounded-xl">
+                        </a>
                         <div class="details">
                             <div class="head flex justify-between">
                                 <h4 class="font-heading font-normal leading-6">Silicone Spatula</h4>
@@ -212,7 +220,10 @@
                         </div>
                     </div>
                     <div class="two flex flex-col gap-2">
-                        <img src="./assets/image/Products/Measuring Set.webp" alt="Measuring" class="w-full rounded-xl">
+                        <a href="./shop.html">
+                            <img src="./assets/image/Products/Measuring Set.webp" alt="Measuring"
+                                class="w-full rounded-xl">
+                        </a>
                         <div class="details">
                             <div class="head flex justify-between">
                                 <h4 class="font-heading font-normal leading-6">Measuring Set</h4>
@@ -224,7 +235,10 @@
                         </div>
                     </div>
                     <div class="three hidden md:flex flex-col gap-2">
-                        <img src="./assets/image/Products/Salt & Pepper Mill.webp" alt="Salt" class="w-full rounded-xl">
+                        <a href="./shop.html">
+                            <img src="./assets/image/Products/Salt & Pepper Mill.webp" alt="Salt"
+                                class="w-full rounded-xl">
+                        </a>
                         <div class="details">
                             <div class="head flex justify-between">
                                 <h4 class="font-heading font-normal leading-6">Salt & Pepper Mill</h4>
@@ -236,8 +250,10 @@
                         </div>
                     </div>
                     <div class="four hidden md:flex flex-col gap-2">
-                        <img src="./assets/image/Products/Organic Linen Towels.webp" alt="Organic"
-                            class="w-full rounded-xl md:h-77">
+                        <a href="./shop.html">
+                            <img src="./assets/image/Products/Organic Linen Towels.webp" alt="Organic"
+                                class="w-full rounded-xl md:h-77">
+                        </a>
                         <div class="details">
                             <div class="head flex justify-between">
                                 <h4 class="font-heading font-normal leading-6">Organic Linen Towels</h4>
@@ -251,7 +267,8 @@
                 </div>
             </div>
         </section>
-        <div class="right-side bg-[#F5E5DF] border border-[#DAC1B81A] rounded-xl flex flex-col justify-items-center w-full p-4 gap-2 md:hidden">
+        <div
+            class="right-side bg-[#F5E5DF] border border-[#DAC1B81A] rounded-xl flex flex-col justify-items-center w-full p-4 gap-2 md:hidden">
             <h2 class="font-heading font-medium text-[20px] leading-5">Order Summary</h2>
             <div class="order flex flex-col gap-2">
                 <div class="sub flex justify-between">
@@ -267,10 +284,10 @@
                     <span>$14.67</span>
                 </div>
             </div>
-                <div class="btn flex flex-col gap-2 justify-center items-center">
-                    <label for=""">Discount Code</label>
-                    <input type="text" name="" id="" placeholder="Enter code" class="bg-white px-2 py-2.5 rounded-lg">
-                </div>
+            <div class="btn flex flex-col gap-2 justify-center items-center">
+                <label for=""">Discount Code</label>
+                    <input type=" text" name="" id="" placeholder="Enter code" class="bg-white px-2 py-2.5 rounded-lg">
+            </div>
             <div class="total flex justify-between items-center py-2">
                 <h3 class="font-heading font-medium text-[20px] leading-5">Total</h3>
                 <span class="font-heading font-semibold text-[20px] leading-5 text-brown">$279.67</span>
