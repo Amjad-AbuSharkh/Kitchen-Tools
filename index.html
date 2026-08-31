@@ -11,13 +11,13 @@
     <link href="./assets/src/output.css" rel="stylesheet">
 </head>
 
-<body class="font-primary">
-    <header class="bg-primary px-4 md:px-16 h-20 flex flex-col justify-center items-center">
-        <div class="container mx-auto flex justify-between items-center">
+<body>
+    <header class="bg-primary py-7">
+        <div class="container row">
             <nav class="lists hidden md:block">
-                <ul class="flex gap-5 capitalize text-secondary font-semibold">
+                <ul class="nav-links">
                     <li>
-                        <a href="./index.html" class="underline text-brown">home</a>
+                        <a href="./index.html" class="active">home</a>
                     </li>
                     <li>
                         <a href="./shop.html">shop</a>
@@ -34,8 +34,8 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="logo flex gap-5">
-                <img src="./assets/image/public/icon-logo.svg" alt="icon" class="max-w-full hidden md:block">
-                <img src="./assets/image/public/text-logo.svg" alt="text" class="max-w-full">
+                <img src="./assets/image/public/icon-logo.svg" alt="icon" class="hidden md:block">
+                <img src="./assets/image/public/text-logo.svg" alt="text">
             </div>
             <!--هل الافضل نعطي اللون للايقونة بشكل مباشر ولا بزبط للاب المباشر-->
             <div class="icon hidden md:flex gap-5 font-semibold">
@@ -59,12 +59,12 @@
     </header>
     <main>
         <section
-            class="hero bg-[url(../image/public/bg-hero.webp)] md:bg-[url(../image/public/hero.png)] h-screen bg-cover px-16 py-20">
-            <div class="container mx-auto flex flex-col justify-end md:justify-center h-full gap-3 md:gap-[23.4px]">
+            class="hero bg-[url(../image/public/bg-hero.webp)] md:bg-[url(../image/public/hero.png)] h-screen bg-center bg-cover bg-no-repeat">
+            <div class="container column justify-end md:justify-center h-full gap-3 md:gap-[23.4px]">
                 <span class="hidden md:block text-[#FFDBCD] font-semibold leading-5">THE ART OF COOKING</span>
-                <h1 class="md:text-[40px] text-white font-semibold font-heading md:leading-12 px-2.5 md:px-0">Elevate
+                <h1 class="md:text-[40px] text-white font-semibold md:leading-12 px-2.5 md:px-0">Elevate
                     Your Culinary Craft</h1>
-                <p class="text-white md:text-[18px] md:leading-7 line-clamp-1 md:line-clamp-none px-2.5 md:px-0">
+                <p class="text-white md:text-[18px] md:leading-7 px-2.5 md:px-0">
                     Professional-grade kitchenware designed for the home
                     chef. Marrying heritage craftsmanship with modern
                     minimalist design.</p>
@@ -80,11 +80,11 @@
             </div>
         </section>
         <section class="categor md:bg-primary border py-12">
-            <div class="container mx-auto">
+            <div class="container">
                 <span class="hidden md:block text-brown leading-5 font-semibold">— CURATED COLLECTIONS</span>
-                <div class="title flex justify-between items-center mb-8 px-2.5 md:px-0">
+                <div class="title row mb-8 px-2.5 md:px-0">
                     <h2
-                        class=" font-bold text-[20px] md:text-[32px] font-heading leading-7 md:leading-10 text-[#221A17] md:font-medium">
+                        class=" font-bold text-[20px] md:text-[32px] leading-7 md:leading-10 text-[#221A17] md:font-medium">
                         Shop by Category</h2>
                     <a href="shop.html"
                         class=" md:underline text-brown md:text-secondary text-[14px] leading-5 font-semibold flex gap-0.5">View
@@ -125,22 +125,22 @@
                 </div>
                 <div class="products-phone px-2.5 flex flex-wrap justify-around gap-2.5 md:hidden ">
                     <button
-                        class="bg-primary text-brown px-6 py-2 font-semibold rounded-[999px] text-[14px] leading-5">Cookware</button>
+                        class="btn-phone">Cookware</button>
                     <button
-                        class="bg-primary text-brown px-6 py-2 font-semibold rounded-[999px] text-[14px] leading-5">Knives</button>
+                        class="btn-phone">Knives</button>
                     <button
-                        class="bg-primary text-brown px-6 py-2 font-semibold rounded-[999px] text-[14px] leading-5">Organizers</button>
+                        class="btn-phone">Organizers</button>
                 </div>
             </div>
         </section>
-        <section class="Signature py-12 flex flex-col gap-4">
-            <h2 class="hidden md:block text-center font-heading font-medium text-[32px] leading-10">The Signature
+        <section class="Signature py-12 column gap-4">
+            <h2 class="hidden md:block text-center font-medium text-[32px] leading-10">The Signature
                 Edit</h2>
             <p class="hidden md:block text-center font-normal leading-6 text-secondary">Our most loved essentials,
                 crafted to last a
                 lifetime and perform under the <br>
                 most demanding kitchen conditions.</p>
-            <div class="container mx-auto">
+            <div class="container">
                 <!--في مشكلة في تقسيم العناصر عند الشاشة 3 ؟؟ وكان في مساحه فاضية ف استحدمت  mx-auto-->
                 <div
                     class="products hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2.5 mx-auto justify-items-center">
@@ -148,7 +148,7 @@
                         <a href="./details-shop.html">
                             <img src="./assets/image/Products/Signature Oven.webp" alt="Signature">
                         </a>
-                        <h3 class="font-heading font-normal leading-6 opacity-[0.8]">Signature Oven</h3>
+                        <h3 class="font-normal leading-6 opacity-[0.8]">Signature Oven</h3>
                         <p class="font-semibold text-[14px] leading-5 opacity-[0.5]">4.5qt • Cast Iron</p>
                         <span class="font-semibold text-[14px] leading-5 text-brown opacity-[0.8]">$245.00</span>
                         <button
@@ -159,7 +159,7 @@
                         <a href="./details-shop.html">
                             <img src="./assets/image/Products/Heritage Knife Trio.webp" alt="heritage">
                         </a>
-                        <h3 class="font-heading font-normal leading-6 opacity-[0.8]">Heritage Knife Trio</h3>
+                        <h3 class="font-normal leading-6 opacity-[0.8]">Heritage Knife Trio</h3>
                         <p class="font-semibold text-[14px] leading-5 opacity-[0.5]">Forged Walnut • 3-Piece Set</p>
                         <span class="font-semibold text-[14px] leading-5 text-brown opacity-[0.8]">$180.00</span>
                     </div>
@@ -167,7 +167,7 @@
                         <a href="./details-shop.html">
                             <img src="./assets/image/Products/Artisan Pasta Bowls.webp" alt="Artisan">
                         </a>
-                        <h3 class="font-heading font-normal leading-6 opacity-[0.8]">Artisan Pasta Bowls</h3>
+                        <h3 class="font-normal leading-6 opacity-[0.8]">Artisan Pasta Bowls</h3>
                         <p class="font-semibold text-[14px] leading-5 opacity-[0.5]">Set of 4 • Hand-thrown Ceramic</p>
                         <span class="font-semibold text-[14px] leading-5 text-brown opacity-[0.8]">$72.00</span>
                     </div>
@@ -175,7 +175,7 @@
                         <a href="./details-shop.html">
                             <img src="./assets/image/Products/Sienna Copper Pan.webp" alt="Signature">
                         </a>
-                        <h3 class="font-heading font-normal leading-6 opacity-[0.8]">Sienna Copper Pan</h3>
+                        <h3 class="font-normal leading-6 opacity-[0.8]">Sienna Copper Pan</h3>
                         <p class="font-semibold text-[14px] leading-5 opacity-[0.5]">10" • 3-Ply Copper Core</p>
                         <span class="font-semibold text-[14px] leading-5 text-brown opacity-[0.8]">$155.00</span>
                         <button
@@ -219,7 +219,7 @@
             </div>
         </section>
         <section class="Services bg-primary">
-            <div class="container mx-auto flex gap-8 justify-between items-center md:bg-primary px-16 py-8">
+            <div class="container row gap-8 md:bg-primary py-7">
                 <!--بحاجة الى تزبيط عند الشاشات الاصغر-->
                 <div class="FREE_SHIPPING hidden md:flex items-center gap-2.5">
                     <img src="./assets/image/public/Free.webp" alt="FREE-SHIPPING">

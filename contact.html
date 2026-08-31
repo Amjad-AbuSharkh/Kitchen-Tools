@@ -11,13 +11,13 @@
     <link href="./assets/src/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-primary">
-    <header class="bg-primary px-4 md:px-16 h-20 flex flex-col justify-center items-center">
-        <div class="container mx-auto flex justify-between items-center">
-            <nav class="lists hidden md:block">
-                <ul class="flex gap-5 capitalize text-secondary font-semibold">
+<body>
+    <header class="py-7">
+        <div class="container row">
+            <nav class="lists hidden lg:block">
+                <ul class="nav-links">
                     <li>
-                        <a href="./index.html" class="underline text-brown">home</a>
+                        <a href="./index.html">home</a>
                     </li>
                     <li>
                         <a href="./shop.html">shop</a>
@@ -26,11 +26,11 @@
                         <a href="">about</a>
                     </li>
                     <li>
-                        <a href="./contact.html">contact</a>
+                        <a href="./contact.html" class="active">contact</a>
                     </li>
                 </ul>
             </nav>
-            <div class="menu block md:hidden text-brown">
+            <div class="menu block lg:hidden text-brown">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="logo flex gap-5">
@@ -59,42 +59,42 @@
     </header>
     <main>
         <section>
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 md:gap-6">
-                <div class="order-phone mb-5 w-full flex justify-between items-center p-4 rounded-xl md:hidden bg-[#FFF1EC]">
+            <div class="container grid grid-cols-1 lg:grid-cols-3 lg:gap-6">
+                <div class="order-phone mb-5 w-full row p-4 rounded-xl lg:hidden bg-[#FFF1EC]">
                     <div class="icon">
                         <img src="./assets/image/public/order-phone.svg" alt="order-phone" class="max-w-ful">
                     </div>
                     <div class="title text-center">
-                        <h1 class="font-heading font-medium text-[20px] leading-7">Order<br>Summary</h1>
+                        <h1 class="font-heading font-medium text-[12px] sm:text-[20px] leading-4 sm:leading-7">Order<br>Summary</h1>
                     </div>
                     <div
-                        class="items flex flex-col items-center py-0.5 px-2.75 rounded-[999px] bg-[#823B181A] text-[12px] leading-4 text-brown">
+                        class="items column items-center py-2.5 px-2.5 sm:py-0.5 sm:px-2.75 rounded-[999px] bg-[#823B181A] text-[12px] leading-4 text-brown">
                         <span>2</span>
                         <span>items</span>
                     </div>
                     <div class="price flex items-center gap-2">
-                        <span class="font-heading font-medium text-[20px] leading-7 text-brown">$184.00</span>
+                        <span class="font-heading font-medium text-[15px] sm:text-[20px] leading-7 text-brown">$184.00</span>
                         <img src="./assets/image/public/arrow-bottom.svg" alt="arrow-bottom" class="max-w-full">
                     </div>
                 </div>
-                <div class="left-side flex flex-col gap-8 pb-10 col-span-2">
-                    <div class="contact flex flex-col gap-6 md:p-8 md:bg-[#FFF1EC] rounded-xl">
-                        <div class="one flex items-center justify-between">
+                <div class="left-side column gap-8 pb-10 col-span-2">
+                    <div class="contact column gap-6 md:p-8 md:bg-[#FFF1EC] rounded-xl">
+                        <div class="one row">
                             <div class="info flex items-center gap-4">
                                 <span
                                     class="w-8 h-8 text-white rounded-full flex items-center justify-center bg-brown">1</span>
-                                <h1 class="font-heading text-[24px] font-medium leading-8 md:leading-6 md:font-normal">CONTACTINFORMATION</h1>
+                                <h1 class="text-[18px] md:text-[24px] font-medium leading-4 md:leading-6 md:font-normal">CONTACTINFORMATION</h1>
                             </div>
                             <button class=" hidden md:block font-medium text-[12px] leading-4 text-brown">EDIT</button>
                         </div>
-                        <div class="two flex flex-col gap-4">
-                            <div class="hidden md:flex flex-col gap-1">
+                        <div class="two column gap-4">
+                            <div class="hidden md:column gap-1">
                                 <label for="email" class="font-medium text-[12px] leading-4 text-secondary">EMAIL
                                     ADDRESS</label>
                                 <input type="email" name="" id="email" placeholder="alex.rivera@example.com"
                                     class="py-4.5 px-4 bg-primary rounded-lg font-normal text-[#9CA3AF]">
                             </div>
-                            <div class="phone-info flex flex-col gap-4 md:hidden">
+                            <div class="phone-info column gap-4 md:hidden">
                                 <input type="text" placeholder="Full Name" class="bg-[#FFF1EC] rounded-xl py-4.5 px-4 leading-6 text-secondary">
                                 <input type="text" placeholder="Phone Number" class="bg-[#FFF1EC] rounded-xl py-4.5 px-4 leading-6 text-secondary">
                             </div>
@@ -104,11 +104,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="SHIPPING md:p-8 flex flex-col gap-6 md:bg-[#FFF1EC] rounded-xl">
+                    <div class="SHIPPING md:p-8 column gap-6 md:bg-[#FFF1EC] rounded-xl">
                         <div class="address flex items-center gap-4">
                             <span
                                 class="w-8 h-8 rounded-full font-semibold text-[14px] leading-5 text-white bg-brown md:bg-[#EFDFD9] flex items-center justify-center md:text-secondary">2</span>
-                            <h2 class="font-heading font-medium md:font-normal leading-8 md:leading-6 text-[24px]">SHIPPING ADDRESS</h2>
+                            <h2 class="font-medium md:font-normal leading-4 md:leading-6 text-[18px] md:text-[24px]">SHIPPING ADDRESS</h2>
                         </div>
                         <div class="info-phone flex flex-col gap-4 md:hidden">
                             <input type="text" placeholder="Street Address" class="bg-[#FFF1EC] rounded-xl py-4.5 px-4 leading-6 text-secondary">
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="right-side h-225 bg-[#F5E5DF] rounded-xl p-8 hidden md:block">
+                <div class="right-side h-225 bg-[#F5E5DF] rounded-xl p-8 hidden lg:block">
                     <div class="order pb-4 border-b bordeer-[#DAC1B8]">
                         <h3 class="font-heading font-medium text-[32px] leading-10">Order Summary</h3>
                     </div>
